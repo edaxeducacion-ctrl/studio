@@ -1,3 +1,256 @@
+import Image from 'next/image';
+import {
+  Activity,
+  Bone,
+  Dog,
+  Gem,
+  GraduationCap,
+  Hand,
+  HeartPulse,
+  Phone,
+  Scissors,
+  ShieldCheck,
+  Stethoscope,
+  Venus,
+  Waves,
+} from 'lucide-react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { LandingHeader } from '@/components/landing/header';
+import { LandingFooter } from '@/components/landing/footer';
+import { ContactForm } from '@/components/landing/contact-form';
+import { ToothIcon } from '@/components/icons/tooth-icon';
+import { EntIcon } from '@/components/icons/ent-icon';
+import Link from 'next/link';
+
+const SectionTitle = ({ children, className }: { children: React.ReactNode, className?: string }) => (
+  <h2 className={`text-3xl md:text-4xl font-bold text-center text-primary mb-4 ${className}`}>{children}</h2>
+);
+
+const SectionSubtitle = ({ children, className }: { children: React.ReactNode, className?: string }) => (
+  <p className={`text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-12 ${className}`}>{children}</p>
+);
+
+const featureIcons = [
+  { icon: <Gem />, text: 'Máquina Alta Gama' },
+  { icon: <Waves />, text: 'Doble Longitud de Onda (980nm - 1470nm)' },
+  { icon: <ShieldCheck />, text: 'Garantía 2 Años' },
+  { icon: <GraduationCap />, text: 'Formación Profesional' },
+];
+
+const laseevFunctions = [
+  { icon: <HeartPulse />, text: 'Endolifting / Lipólisis' },
+  { icon: <Waves />, text: 'Eliminación de Vasos' },
+  { icon: <Hand />, text: 'Onicomicosis' },
+  { icon: <Venus />, text: 'Rejuvenecimiento Vaginal' },
+  { icon: <Stethoscope />, text: 'EVLT' },
+  { icon: <Bone />, text: 'PLDD' },
+  { icon: <EntIcon />, text: 'Función ENT' },
+  { icon: <ToothIcon />, text: 'Función Dental' },
+  { icon: <Activity />, text: 'Fisioterapia' },
+  { icon: <Scissors />, text: 'Hemorroides / Corte' },
+];
+
+const treatments = [
+  { id: 'treatment-endolifting', title: 'Endolifting Facial Láser', desc: 'Rejuvenecimiento sin cirugía.' },
+  { id: 'treatment-lipomela', title: 'LipoMela', desc: 'Reducción de grasa no invasiva.' },
+  { id: 'treatment-armonizacion', title: 'Armonización Facial', desc: 'Botox / Hialurónico.' },
+  { id: 'treatment-faloplastia', title: 'Faloplastia', desc: 'Engrosamiento con Hialurónico.' },
+  { id: 'treatment-rinomodelacion', title: 'Rinomodelación', desc: 'Resultados inmediatos sin cirugía.' },
+];
+
+const courses = [
+  { id: 'course-endolaser', title: 'Curso de Endoláser / Endolifting' },
+  { id: 'course-botox', title: 'Curso Práctico de Botox' },
+  { id: 'course-armonizacion', title: 'Curso de Armonización Facial' },
+  { id: 'course-vascular', title: 'Curso Vascular Facial' },
+  { id: 'course-faloplastia', title: 'Curso de Faloplastia y Labioplastia' },
+  { id: 'course-mela', title: 'Curso de MELA Corporal' },
+];
+
+
 export default function Home() {
-  return <></>;
+  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
+  const laseevMachineImage = PlaceHolderImages.find(p => p.id === 'laseev-pro-machine');
+  const misterDogImage = PlaceHolderImages.find(p => p.id === 'mister-dog-grooming');
+
+  return (
+    <div className="flex flex-col min-h-screen">
+      <LandingHeader />
+      <main className="flex-grow">
+        {/* Hero Section */}
+        <section id="inicio" className="relative h-screen flex items-center justify-center text-white text-center pt-20">
+          {heroImage && <Image src={heroImage.imageUrl} alt={heroImage.description} data-ai-hint={heroImage.imageHint} fill className="object-cover -z-20" />}
+          <div className="absolute inset-0 bg-black/50 -z-10" />
+          <div className="container px-4">
+            <h1 className="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in-down">MTG: Excelencia en Medicina Estética y Formación Avanzada</h1>
+            <p className="text-lg md:text-xl max-w-4xl mx-auto mb-8 animate-fade-in-up">La solución mínimamente invasiva para la grasa rebelde, la flacidez y las lesiones vasculares. Sin Bisturí. Sin Cicatrices.</p>
+            <Button asChild size="lg" className="animate-fade-in-up">
+              <a href="#laseev">CONOCE EL LÁSER 10 EN 1</a>
+            </Button>
+          </div>
+          <div className="absolute bottom-0 left-0 right-0 bg-background/80 dark:bg-background/50 backdrop-blur-sm p-4">
+            <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+              {featureIcons.map((feature, index) => (
+                <div key={index} className="flex flex-col items-center gap-2 text-foreground">
+                  <div className="text-primary">{feature.icon}</div>
+                  <span className="text-xs md:text-sm font-semibold">{feature.text}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Star Product Section */}
+        <section id="laseev" className="py-20">
+          <div className="container px-4">
+            <SectionTitle>LASEEV Pro: Endoláser Multifuncional 10 en 1</SectionTitle>
+            <SectionSubtitle>Plataforma láser dual certificada (FDA/ISO) para procedimientos seguros y efectivos. Energía de alta precisión con potencia ajustable de 1 a 30 watts.</SectionSubtitle>
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="flex justify-center">
+                {laseevMachineImage && <Image src={laseevMachineImage.imageUrl} alt={laseevMachineImage.description} data-ai-hint={laseevMachineImage.imageHint} width={500} height={500} className="rounded-lg shadow-2xl" />}
+              </div>
+              <div className="flex flex-col items-center md:items-start text-center md:text-left">
+                <p className="text-muted-foreground mb-2">Oferta Limitada</p>
+                <p className="text-5xl lg:text-6xl font-extrabold text-primary mb-6">$7100 USD</p>
+                <p className="mb-8 text-lg">La tecnología más avanzada para una amplia gama de aplicaciones médicas y estéticas.</p>
+                <Button asChild size="lg">
+                  <a href="#contacto">SOLICITAR FICHA TÉCNICA</a>
+                </Button>
+              </div>
+            </div>
+            <div className="mt-20">
+              <h3 className="text-2xl font-bold text-center text-primary/90 mb-8">10 Funciones en 1 Equipo</h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6">
+                {laseevFunctions.map((func, index) => (
+                  <Card key={index} className="text-center p-4 hover:shadow-lg hover:-translate-y-1 transition-transform duration-300">
+                    <div className="flex justify-center items-center h-16">
+                      <div className="bg-primary/10 text-primary p-3 rounded-full">{func.icon}</div>
+                    </div>
+                    <p className="font-semibold text-sm mt-2">{func.text}</p>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Treatments Section */}
+        <section id="tratamientos" className="py-20 bg-card">
+          <div className="container px-4">
+            <SectionTitle>Tratamientos Estéticos MTG</SectionTitle>
+            <SectionSubtitle>Descubre nuestros procedimientos de vanguardia para realzar tu belleza natural con resultados profesionales y seguros.</SectionSubtitle>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+              {treatments.map((treatment) => {
+                const image = PlaceHolderImages.find(p => p.id === treatment.id);
+                return (
+                  <Card key={treatment.id} className="overflow-hidden group">
+                    {image && <div className="overflow-hidden"><Image src={image.imageUrl} alt={image.description} data-ai-hint={image.imageHint} width={500} height={300} className="object-cover w-full h-40 group-hover:scale-105 transition-transform duration-300" /></div>}
+                    <CardHeader>
+                      <CardTitle className="text-lg">{treatment.title}</CardTitle>
+                      <CardDescription>{treatment.desc}</CardDescription>
+                    </CardHeader>
+                  </Card>
+                );
+              })}
+            </div>
+            <div className="text-center mt-12">
+              <Button asChild size="lg">
+                <a href="tel:970616024">
+                  <Phone className="mr-2" /> AGENDA TU CITA (970 616 024)
+                </a>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Courses Section */}
+        <section id="cursos" className="py-20">
+          <div className="container px-4">
+            <SectionTitle>Cursos de Alta Especialidad</SectionTitle>
+            <SectionSubtitle>Dirigido a Médicos, Odontólogos, Ginecólogos, Cirujanos Plásticos y profesionales de la salud que buscan liderar en su campo.</SectionSubtitle>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {courses.map((course) => {
+                const image = PlaceHolderImages.find(p => p.id === course.id);
+                return (
+                  <Card key={course.id} className="overflow-hidden group">
+                     {image && <div className="overflow-hidden"><Image src={image.imageUrl} alt={image.description} data-ai-hint={image.imageHint} width={500} height={300} className="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300" /></div>}
+                    <CardHeader>
+                      <CardTitle className="text-lg">{course.title}</CardTitle>
+                    </CardHeader>
+                  </Card>
+                );
+              })}
+            </div>
+            <div className="text-center mt-12">
+              <Button asChild size="lg">
+                <a href="#contacto">VER FECHAS Y MATRICULARME</a>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Mister Dog Section */}
+        <section id="mister-dog" className="py-20 bg-sky-50 dark:bg-sky-900/20">
+          <div className="container px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-sky-800 dark:text-sky-200 mb-4 flex items-center justify-center gap-3">
+                <Dog className="w-8 h-8"/>
+                Servicios Caninos: Mister Dog
+              </h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="space-y-8">
+                <Card className="bg-white dark:bg-card">
+                  <CardHeader>
+                    <CardTitle className="text-sky-700 dark:text-sky-300">Promoción Baño y Corte</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-4xl font-bold text-sky-800 dark:text-sky-200 mb-2">S/40</p>
+                    <p className="text-muted-foreground">Incluye Desparasitación y Delivery Gratis.</p>
+                  </CardContent>
+                </Card>
+                <Card className="bg-white dark:bg-card">
+                  <CardHeader>
+                    <CardTitle className="text-sky-700 dark:text-sky-300">Curso Básico de Peluquería Canina</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">Formación 100% personalizada. Aprende una nueva profesión con alta demanda.</p>
+                  </CardContent>
+                </Card>
+                <div className="text-center md:text-left text-sky-900 dark:text-sky-200">
+                  <p><strong>Ubicación:</strong> Los Amatistas #125, S.J.L.</p>
+                  <p><strong>Teléfono:</strong> <a href="tel:+51947282902" className="hover:underline">+51 947 282 902</a></p>
+                </div>
+              </div>
+              <div>
+                {misterDogImage && <Image src={misterDogImage.imageUrl} alt={misterDogImage.description} data-ai-hint={misterDogImage.imageHint} width={600} height={400} className="rounded-lg shadow-xl" />}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section id="contacto" className="py-20">
+          <div className="container px-4">
+            <SectionTitle>Contacto</SectionTitle>
+            <SectionSubtitle>¿Tienes alguna pregunta? Envíanos un mensaje y te contactaremos a la brevedad.</SectionSubtitle>
+            <div className="max-w-xl mx-auto">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Formulario de Contacto</CardTitle>
+                  <CardDescription>Completa tus datos para recibir más información.</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ContactForm />
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+      </main>
+      <LandingFooter />
+    </div>
+  );
 }

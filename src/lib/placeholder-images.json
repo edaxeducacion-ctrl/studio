@@ -1,3 +1,88 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A modern and clean medical clinic interior.",
+      "imageUrl": "https://images.unsplash.com/photo-1631507623121-eaaba8d4e7dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtZWRpY2FsJTIwY2xpbmljfGVufDB8fHx8MTc2NDM2MTQ0NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical clinic"
+    },
+    {
+      "id": "laseev-pro-machine",
+      "description": "The LASEEV Pro endolaser machine on a clean background.",
+      "imageUrl": "https://images.unsplash.com/photo-1700832082152-0416a3ee5e60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtZWRpY2FsJTIwZXF1aXBtZW50fGVufDB8fHx8MTc2NDM1MjYxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical equipment"
+    },
+    {
+      "id": "treatment-endolifting",
+      "description": "A patient receiving a non-invasive facial treatment.",
+      "imageUrl": "https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmFjaWFsJTIwdHJlYXRtZW50fGVufDB8fHx8MTc2NDM5MDYzMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "facial treatment"
+    },
+    {
+      "id": "treatment-lipomela",
+      "description": "Body contouring procedure.",
+      "imageUrl": "https://images.unsplash.com/photo-1625630744986-9f726dd6cce5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxib2R5JTIwY29udG91cmluZ3xlbnwwfHx8fDE3NjQ0NTQwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "body contouring"
+    },
+    {
+      "id": "treatment-armonizacion",
+      "description": "Close up of a facial harmonization procedure with injectables.",
+      "imageUrl": "https://images.unsplash.com/photo-1601839777132-b3f4e455c369?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmYWNpYWwlMjBpbmplY3Rpb258ZW58MHx8fHwxNzY0NDU2MTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "facial injection"
+    },
+    {
+      "id": "treatment-faloplastia",
+      "description": "Abstract medical image related to men's health.",
+      "imageUrl": "https://images.unsplash.com/photo-1486291301608-a503c774721a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzY0NDU2MTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical abstract"
+    },
+    {
+      "id": "treatment-rinomodelacion",
+      "description": "Profile view of a face showing nose before and after.",
+      "imageUrl": "https://images.unsplash.com/photo-1516914943479-89db7d9ae7f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmYWNlJTIwcHJvZmlsZXxlbnwwfHx8fDE3NjQ0MjM3OTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "face profile"
+    },
+    {
+      "id": "course-endolaser",
+      "description": "Doctors in a training session with medical equipment.",
+      "imageUrl": "https://images.unsplash.com/photo-1674702734929-2f301792ddae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWVkaWNhbCUyMHRyYWluaW5nfGVufDB8fHx8MTc2NDQzMzU0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical training"
+    },
+    {
+      "id": "course-botox",
+      "description": "A doctor teaching about facial injection points.",
+      "imageUrl": "https://images.unsplash.com/photo-1733222765056-b0790217baa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtZWRpY2FsJTIwbGVjdHVyZXxlbnwwfHx8fDE3NjQ0NTQ0NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical lecture"
+    },
+    {
+      "id": "course-armonizacion",
+      "description": "Hands-on training for facial aesthetics.",
+      "imageUrl": "https://images.unsplash.com/photo-1667304249981-35af72feebfa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjB0cmFpbmluZ3xlbnwwfHx8fDE3NjQ0NTYxOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "aesthetic training"
+    },
+    {
+      "id": "course-vascular",
+      "description": "A close-up of a vascular laser treatment.",
+      "imageUrl": "https://images.unsplash.com/photo-1754941622138-b3c3671f2fa8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsYXNlciUyMHRyZWF0bWVudHxlbnwwfHx8fDE3NjQ0NTQwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laser treatment"
+    },
+    {
+      "id": "course-faloplastia",
+      "description": "A professional medical seminar setting.",
+      "imageUrl": "https://images.unsplash.com/photo-1733222765056-b0790217baa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtZWRpY2FsJTIwc2VtaW5hcnxlbnwwfHx8fDE3NjQ0NTYxOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical seminar"
+    },
+    {
+      "id": "course-mela",
+      "description": "Practical training on body contouring techniques.",
+      "imageUrl": "https://images.unsplash.com/photo-1716996236807-a45afca9957a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Ym9keSUyMGNvbnRvdXJpbmd8ZW58MHx8fHwxNzY0NDU0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "body contouring"
+    },
+    {
+      "id": "mister-dog-grooming",
+      "description": "A happy dog being groomed.",
+      "imageUrl": "https://images.unsplash.com/photo-1611173622933-91942d394b04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkb2clMjBncm9vbWluZ3xlbnwwfHx8fDE3NjQzNzcxMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dog grooming"
+    }
+  ]
 }
