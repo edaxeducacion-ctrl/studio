@@ -170,8 +170,8 @@ export default function Home() {
                     </CardHeader>
                     <CardFooter>
                        <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
-                         <a href="https://wa.me/51970616024?text=Hola,%20quisiera%20más%20información%20sobre%20el%20tratamiento%20de%20'${treatment.title}'" target="_blank" rel="noopener noreferrer">
-                           <WhatsappIcon className="mr-2" /> Solicitar Información
+                         <a href={`https://wa.me/51970616024?text=Hola,%20quisiera%20más%20información%20sobre%20el%20tratamiento%20de%20'${treatment.title}'`} target="_blank" rel="noopener noreferrer">
+                           <WhatsappIcon className="mr-2 h-4 w-4" /> Solicitar Información
                          </a>
                        </Button>
                     </CardFooter>
@@ -272,6 +272,17 @@ export default function Home() {
         </section>
       </main>
       <LandingFooter />
+
+      {/* Floating WhatsApp Button */}
+      <a
+        href="https://wa.me/51970616024?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20servicios."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-[#25D366] text-white w-16 h-16 rounded-full shadow-lg hover:bg-[#128C7E] transition-colors z-50 flex items-center justify-center"
+        aria-label="Contactar por WhatsApp"
+      >
+        <WhatsappIcon className="w-8 h-8" />
+      </a>
     </div>
   );
 }
