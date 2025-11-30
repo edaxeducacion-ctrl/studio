@@ -51,13 +51,13 @@
     {
       "id": "course-botox",
       "description": "A doctor teaching about facial injection points.",
-      "imageUrl": "https://images.unsplash.com/photo-1733222765056-b0790217baa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtZWRpY2FsJTIwbGVjdHVyZXxlbnwwfHx8fDE3NjQ0NTQ0NDN8MA&ixlib  rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1733222765056-b0790217baa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtZWRpY2FsJTIwbGVjdHVyZXxlbnwwfHx8fDE3NjQ0NTQ0NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "medical lecture"
     },
     {
       "id": "course-armonizacion",
       "description": "Hands-on training for facial aesthetics.",
-      "imageUrl": "https://images.unsplash.com/photo-1667304249981-35af72feebfa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjB0cmFpbmluZ3xlbnwwfHx8fDE3NjQ0NTYxOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/uwkhWmZ.jpeg",
       "imageHint": "aesthetic training"
     },
     {
@@ -87,7 +87,7 @@
     {
       "id": "mister-dog-course",
       "description": "A person teaching how to groom a dog.",
-      "imageUrl": "https://images.unsplash.com/photo-1535812859-6bfd2f132e78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZG9nJTIwdHJhaW5pbmd8ZW58MHx8fHwxNzY0NDYyODE2fDA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1535812859-6bfd2f132e78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZG9nJTIwdHJhaW5pbmd8ZW58MHx8fHwxNzY0NDYyODE2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "dog training"
     }
   ]
