@@ -163,7 +163,7 @@ export default function Home() {
                 const image = PlaceHolderImages.find(p => p.id === treatment.id);
                 return (
                   <Card key={treatment.id} className="overflow-hidden group flex flex-col">
-                    {image && <div className="overflow-hidden"><Image src={image.imageUrl} alt={image.description} data-ai-hint={image.imageHint} width={500} height={300} className="object-cover w-full h-40 group-hover:scale-105 transition-transform duration-300" /></div>}
+                    {image && <div className="overflow-hidden aspect-square"><Image src={image.imageUrl} alt={image.description} data-ai-hint={image.imageHint} width={400} height={400} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" /></div>}
                     <CardHeader className="flex-grow">
                       <CardTitle className="text-lg">{treatment.title}</CardTitle>
                       <CardDescription>{treatment.desc}</CardDescription>
