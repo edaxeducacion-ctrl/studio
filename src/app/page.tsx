@@ -80,10 +80,10 @@ export default function Home() {
       <LandingHeader />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section id="inicio" className="relative h-screen flex items-center justify-center text-white text-center pt-20">
+        <section id="inicio" className="relative h-screen flex items-center justify-center text-white text-center">
           {heroImage && <Image src={heroImage.imageUrl} alt={heroImage.description} data-ai-hint={heroImage.imageHint} fill className="object-cover -z-20" />}
           <div className="absolute inset-0 bg-black/50 -z-10" />
-          <div className="container px-4">
+          <div className="container px-4 pt-20">
             <h1 className="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in-down">MTG: Excelencia en Medicina Estética y Formación Avanzada</h1>
             <p className="text-lg md:text-xl max-w-4xl mx-auto mb-8 animate-fade-in-up">La solución mínimamente invasiva para la grasa rebelde, la flacidez y las lesiones vasculares. Sin Bisturí. Sin Cicatrices.</p>
             <Button asChild size="lg" className="animate-fade-in-up">
