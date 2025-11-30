@@ -272,7 +272,7 @@ export default function Home() {
                 <CardFooter>
                   <Button asChild className="w-full bg-sky-500 hover:bg-sky-600 text-white">
                     <a href="https://wa.me/51947282902?text=Hola,%20quisiera%20más%20información%20sobre%20la%20promoción%20de%20baño%20y%20corte." target="_blank" rel="noopener noreferrer">
-                      Más información
+                      <Info className="mr-2 h-4 w-4" /> Más información
                     </a>
                   </Button>
                 </CardFooter>
@@ -290,7 +290,7 @@ export default function Home() {
                 <CardFooter>
                   <Button asChild className="w-full bg-sky-500 hover:bg-sky-600 text-white">
                     <a href="https://wa.me/51947282902?text=Hola,%20quisiera%20inscribirme%20en%20el%20curso%20de%20peluquería%20canina." target="_blank" rel="noopener noreferrer">
-                      Inscribirme
+                      <GraduationCap className="mr-2 h-4 w-4" /> Inscribirme
                     </a>
                   </Button>
                 </CardFooter>
