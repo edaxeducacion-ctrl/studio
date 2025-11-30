@@ -133,7 +133,7 @@ export default function Home() {
                 <p className="text-5xl lg:text-6xl font-extrabold text-primary mb-6">$7100 USD</p>
                 <p className="mb-8 text-lg">La tecnología más avanzada para una amplia gama de aplicaciones médicas y estéticas.</p>
                 <Button asChild size="lg">
-                  <a href="#contacto">SOLICITAR FICHA TÉCNICA</a>
+                  <a href="https://wa.me/51947282902?text=Hola,%20quisiera%20solicitar%20la%20ficha%20técnica%20del%20LASEEV%20Pro." target="_blank" rel="noopener noreferrer">SOLICITAR FICHA TÉCNICA</a>
                 </Button>
               </div>
             </div>
@@ -173,7 +173,7 @@ export default function Home() {
                     </CardHeader>
                     <CardFooter>
                        <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
-                         <a href="tel:+51984348389">
+                         <a href={`https://wa.me/51947282902?text=Hola,%20quisiera%20agendar%20una%20cita%20para%20el%20tratamiento%20de%20'${treatment.title}'`} target="_blank" rel="noopener noreferrer">
                            <Calendar className="mr-2 h-4 w-4" /> Agendar cita
                          </a>
                        </Button>
@@ -195,7 +195,7 @@ export default function Home() {
                       </CardHeader>
                       <CardFooter>
                         <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
-                          <a href="tel:+51984348389">
+                          <a href={`https://wa.me/51947282902?text=Hola,%20quisiera%20agendar%20una%20cita%20para%20el%20tratamiento%20de%20'${treatment.title}'`} target="_blank" rel="noopener noreferrer">
                             <Calendar className="mr-2 h-4 w-4" /> Agendar cita
                           </a>
                         </Button>
@@ -207,8 +207,8 @@ export default function Home() {
             </div>
             <div className="text-center mt-12">
               <Button asChild size="lg">
-                <a href="tel:+51984348389">
-                  <Phone className="mr-2" /> AGENDA TU CITA (+51 984 348 389)
+                <a href="https://wa.me/51947282902?text=Hola,%20quisiera%20agendar%20una%20cita." target="_blank" rel="noopener noreferrer">
+                  <Phone className="mr-2" /> AGENDA TU CITA POR WHATSAPP
                 </a>
               </Button>
             </div>
@@ -231,7 +231,7 @@ export default function Home() {
                     </CardHeader>
                     <CardFooter>
                       <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
-                        <a href={`https://wa.me/51984348389?text=Hola,%20quisiera%20más%20información%20sobre%20el%20curso%20de%20'${course.title}'`} target="_blank" rel="noopener noreferrer">
+                        <a href={`https://wa.me/51947282902?text=Hola,%20quisiera%20inscribirme%20en%20el%20curso%20de%20'${course.title}'`} target="_blank" rel="noopener noreferrer">
                           <WhatsappIcon className="mr-2 h-4 w-4" /> Inscribirme
                         </a>
                       </Button>
@@ -242,7 +242,7 @@ export default function Home() {
             </div>
             <div className="text-center mt-12">
               <Button asChild size="lg">
-                <a href="#contacto">VER FECHAS Y MATRICULARME</a>
+                <a href="https://wa.me/51947282902?text=Hola,%20quisiera%20ver%20las%20fechas%20y%20matricularme%20en%20un%20curso." target="_blank" rel="noopener noreferrer">VER FECHAS Y MATRICULARME</a>
               </Button>
             </div>
           </div>
