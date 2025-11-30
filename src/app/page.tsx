@@ -53,11 +53,11 @@ const laseevFunctions = [
 ];
 
 const treatments = [
-  { id: 'treatment-endolifting', title: 'Endolifting Facial Láser', desc: 'Rejuvenecimiento sin cirugía.' },
-  { id: 'treatment-lipomela', title: 'LipoMela', desc: 'Reducción de grasa no invasiva.' },
-  { id: 'treatment-armonizacion', title: 'Armonización Facial', desc: 'Botox / Hialurónico.' },
-  { id: 'treatment-faloplastia', title: 'Faloplastia', desc: 'Engrosamiento con Hialurónico.' },
-  { id: 'treatment-rinomodelacion', title: 'Rinomodelación', desc: 'Resultados inmediatos sin cirugía.' },
+  { id: 'treatment-endolifting', title: 'Endolifting Facial Láser', desc: 'Define el contorno facial y reduce la flacidez sin cirugía, estimulando el colágeno.' },
+  { id: 'treatment-lipomela', title: 'LipoMela', desc: 'Elimina depósitos de grasa localizada de forma segura y mínimamente invasiva.' },
+  { id: 'treatment-armonizacion', title: 'Armonización Facial', desc: 'Combina Botox y Hialurónico para suavizar arrugas y restaurar volúmenes faciales.' },
+  { id: 'treatment-faloplastia', title: 'Faloplastia', desc: 'Procedimiento de engrosamiento con Ácido Hialurónico para resultados naturales.' },
+  { id: 'treatment-rinomodelacion', title: 'Rinomodelación', desc: 'Corrige y perfila la nariz al instante, sin necesidad de pasar por el quirófano.' },
 ];
 
 const courses = [
@@ -95,7 +95,7 @@ export default function Home() {
         </section>
         
         {/* Features Section */}
-        <section className="bg-background py-8 md:py-0 md:-mt-16 relative z-20">
+        <section className="bg-background py-8 md:py-12 relative z-20">
           <div className="container mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {featureIcons.map((feature, index) => (
