@@ -52,11 +52,11 @@ export function LandingHeader() {
             <Link href="#mister-dog">MISTER DOG</Link>
           </Button>
           <a
-            href="tel:970616024"
+            href="tel:+51984348389"
             className="flex items-center gap-2 text-sm font-semibold text-primary"
           >
             <Phone className="h-4 w-4" />
-            970 616 024
+            +51 984 348 389
           </a>
         </div>
         <div className="lg:hidden">
@@ -92,11 +92,11 @@ export function LandingHeader() {
                     <Link href="#mister-dog">MISTER DOG</Link>
                   </Button>
                   <a
-                    href="tel:970616024"
+                    href="tel:+51984348389"
                     className="flex items-center justify-center gap-2 text-lg font-semibold text-primary"
                   >
                     <Phone className="h-5 w-5" />
-                    970 616 024
+                    +51 984 348 389
                   </a>
                 </div>
               </div>
