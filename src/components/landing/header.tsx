@@ -47,7 +47,7 @@ export function LandingHeader() {
           ))}
         </nav>
         <div className="hidden lg:flex items-center gap-4">
-          <Button asChild variant="outline">
+          <Button asChild className="bg-sky-600 hover:bg-sky-700 text-white font-bold">
             <Link href="#mister-dog">MISTER DOG</Link>
           </Button>
           <a
@@ -67,10 +67,10 @@ export function LandingHeader() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-card p-0">
-               <SheetTitle className="sr-only">Menú de Navegación</SheetTitle>
+               <SheetTitle>Menú de Navegación</SheetTitle>
               <div className="flex flex-col h-full p-6">
-                <Link href="#inicio" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-primary mb-8">
-                  Medic Teaching Group
+                <Link href="#inicio" onClick={() => setIsMobileMenuOpen(false)} className="mb-8">
+                  <Image src="https://i.imgur.com/hk8p7DX.png" alt="Medic Teaching Group Logo" width={180} height={48} />
                 </Link>
                 <nav className="flex flex-col gap-6 text-lg">
                   {navLinks.map((link) => (
@@ -85,7 +85,7 @@ export function LandingHeader() {
                   ))}
                 </nav>
                 <div className="mt-auto flex flex-col gap-4">
-                   <Button asChild variant="outline" size="lg" onClick={() => setIsMobileMenuOpen(false)}>
+                   <Button asChild size="lg" onClick={() => setIsMobileMenuOpen(false)} className="bg-sky-600 hover:bg-sky-700 text-white font-bold">
                     <Link href="#mister-dog">MISTER DOG</Link>
                   </Button>
                   <a
