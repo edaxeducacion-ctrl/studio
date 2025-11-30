@@ -40,16 +40,16 @@ const featureIcons = [
 ];
 
 const laseevFunctions = [
-  { icon: <HeartPulse />, text: 'Endolifting / Lipólisis' },
-  { icon: <Waves />, text: 'Eliminación de Vasos' },
-  { icon: <Hand />, text: 'Onicomicosis' },
-  { icon: <Venus />, text: 'Rejuvenecimiento Vaginal' },
-  { icon: <Stethoscope />, text: 'EVLT' },
-  { icon: <Bone />, text: 'PLDD' },
-  { icon: <EntIcon />, text: 'Función ENT' },
-  { icon: <ToothIcon />, text: 'Función Dental' },
-  { icon: <Activity />, text: 'Fisioterapia' },
-  { icon: <Scissors />, text: 'Hemorroides / Corte' },
+  { icon: <HeartPulse />, text: 'Endolifting / Lipólisis', description: 'Rejuvenecimiento y eliminación de grasa localizada.' },
+  { icon: <Waves />, text: 'Eliminación de Vasos', description: 'Tratamiento de arañas vasculares y telangiectasias.' },
+  { icon: <Hand />, text: 'Onicomicosis', description: 'Tratamiento láser para hongos en las uñas.' },
+  { icon: <Venus />, text: 'Rejuvenecimiento Vaginal', description: 'Tensado y rejuvenecimiento íntimo femenino.' },
+  { icon: <Stethoscope />, text: 'EVLT', description: 'Tratamiento endovenoso para várices.' },
+  { icon: <Bone />, text: 'PLDD', description: 'Descompresión percutánea de disco con láser.' },
+  { icon: <EntIcon />, text: 'Función ENT', description: 'Aplicaciones en Otorrinolaringología.' },
+  { icon: <ToothIcon />, text: 'Función Dental', description: 'Procedimientos odontológicos láser avanzados.' },
+  { icon: <Activity />, text: 'Fisioterapia', description: 'Terapia para alivio del dolor y rehabilitación.' },
+  { icon: <Scissors />, text: 'Hemorroides / Corte', description: 'Cirugía proctológica y corte de tejidos blandos.' },
 ];
 
 const treatments = [
@@ -135,11 +135,14 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-center text-primary/90 mb-8">10 Funciones en 1 Equipo</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6">
                 {laseevFunctions.map((func, index) => (
-                  <Card key={index} className="text-center p-4 hover:shadow-lg hover:-translate-y-1 transition-transform duration-300">
-                    <div className="flex justify-center items-center h-16">
-                      <div className="bg-primary/10 text-primary p-3 rounded-full">{func.icon}</div>
-                    </div>
-                    <p className="font-semibold text-sm mt-2">{func.text}</p>
+                  <Card key={index} className="text-center hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 flex flex-col">
+                    <CardHeader className="items-center">
+                      <div className="bg-primary/10 text-primary p-3 rounded-full mb-2">{func.icon}</div>
+                      <CardTitle className="text-base font-semibold">{func.text}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="px-4 pb-4">
+                      <p className="text-sm text-muted-foreground">{func.description}</p>
+                    </CardContent>
                   </Card>
                 ))}
               </div>
