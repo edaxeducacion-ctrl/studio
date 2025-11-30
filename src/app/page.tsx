@@ -68,7 +68,9 @@ const courses = [
   { id: 'course-botox', title: 'Curso Práctico de Botox' },
   { id: 'course-armonizacion', title: 'Curso de Armonización Facial' },
   { id: 'course-vascular', title: 'Curso Vascular Facial' },
-  { id: 'course-faloplastia', title: 'Curso de Faloplastia y Labioplastia' },
+  { id: 'course-faloplastia', title: 'Curso de Faloplastia' },
+  { id: 'course-labioplastia', title: 'Curso de Labioplastia' },
+  { id: 'course-rinomodelacion', title: 'Curso de Rinomodelación' },
   { id: 'course-mela', title: 'Curso de MELA Corporal' },
 ];
 
@@ -218,7 +220,7 @@ export default function Home() {
           <div className="container px-4">
             <SectionTitle>Cursos de Alta Especialidad</SectionTitle>
             <SectionSubtitle>Dirigido a Médicos, Odontólogos, Ginecólogos, Cirujanos Plásticos y profesionales de la salud que buscan liderar en su campo.</SectionSubtitle>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {courses.map((course) => {
                 const image = PlaceHolderImages.find(p => p.id === course.id);
                 return (
