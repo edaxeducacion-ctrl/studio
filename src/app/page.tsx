@@ -158,7 +158,7 @@ export default function Home() {
           <div className="container px-4">
             <SectionTitle>Tratamientos Estéticos MTG</SectionTitle>
             <SectionSubtitle>Descubre nuestros procedimientos de vanguardia para realzar tu belleza natural con resultados profesionales y seguros.</SectionSubtitle>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {treatments.map((treatment) => {
                 const image = PlaceHolderImages.find(p => p.id === treatment.id);
                 return (
