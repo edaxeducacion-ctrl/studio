@@ -88,7 +88,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/50" />
           
           <div className="relative z-10 w-full container px-4 py-12 text-center flex flex-col items-center">
-            <h1 className="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in-down">MTG: Excelencia en Medicina Estética y Formación Avanzada</h1>
+            <h1 className="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in-down text-white">MTG: Excelencia en Medicina Estética y Formación Avanzada</h1>
             <p className="text-lg md:text-xl max-w-4xl mx-auto mb-8 animate-fade-in-up">La solución mínimamente invasiva para la grasa rebelde, la flacidez y las lesiones vasculares. Sin Bisturí. Sin Cicatrices.</p>
             <Button asChild size="lg" className="animate-fade-in-up">
               <a href="#laseev">CONOCE EL LÁSER 10 EN 1</a>
