@@ -159,7 +159,7 @@ export default function Home() {
             <SectionTitle>Tratamientos Estéticos MTG</SectionTitle>
             <SectionSubtitle>Descubre nuestros procedimientos de vanguardia para realzar tu belleza natural con resultados profesionales y seguros.</SectionSubtitle>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {treatments.map((treatment) => {
+              {treatments.slice(0, 3).map((treatment) => {
                 const image = PlaceHolderImages.find(p => p.id === treatment.id);
                 return (
                   <Card key={treatment.id} className="overflow-hidden group flex flex-col">
@@ -178,6 +178,29 @@ export default function Home() {
                   </Card>
                 );
               })}
+            </div>
+            <div className="mt-6 flex justify-center">
+              <div className="grid sm:grid-cols-2 gap-6">
+                {treatments.slice(3).map((treatment) => {
+                  const image = PlaceHolderImages.find(p => p.id === treatment.id);
+                  return (
+                    <Card key={treatment.id} className="overflow-hidden group flex flex-col lg:w-[calc(50vw-2.5rem)] max-w-sm">
+                      {image && <div className="overflow-hidden aspect-square"><Image src={image.imageUrl} alt={image.description} data-ai-hint={image.imageHint} width={400} height={400} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" /></div>}
+                      <CardHeader className="flex-grow">
+                        <CardTitle className="text-lg">{treatment.title}</CardTitle>
+                        <CardDescription>{treatment.desc}</CardDescription>
+                      </CardHeader>
+                      <CardFooter>
+                        <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
+                          <a href={`https://wa.me/51970616024?text=Hola,%20quisiera%20más%20información%20sobre%20el%20tratamiento%20de%20'${treatment.title}'`} target="_blank" rel="noopener noreferrer">
+                            <WhatsappIcon className="mr-2 h-4 w-4" /> Solicitar Información
+                          </a>
+                        </Button>
+                      </CardFooter>
+                    </Card>
+                  );
+                })}
+              </div>
             </div>
             <div className="text-center mt-12">
               <Button asChild size="lg">
