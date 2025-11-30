@@ -120,6 +120,9 @@ export default function Home() {
                 {laseevMachineImage && <Image src={laseevMachineImage.imageUrl} alt={laseevMachineImage.description} data-ai-hint={laseevMachineImage.imageHint} width={500} height={500} className="rounded-lg shadow-2xl" />}
               </div>
               <div className="flex flex-col items-center md:items-start text-center md:text-left">
+                <h3 className="text-2xl font-bold text-primary/90 mb-4">¿Deseas Disolver Grasa y Tensar la Piel en un solo procedimiento?</h3>
+                <p className="mb-4 text-muted-foreground">Endoláser multifuncional es la solución mínimamente invasiva para la grasa rebelde. Disuelve las células adiposas y, simultáneamente, tensa la piel para una silueta definida. ¡Remodelación corporal avanzada con una recuperación más rápida!</p>
+                <p className="mb-6 font-semibold">SIN BISTURÍ. SIN CICATRICES CON RESULTADOS CLÍNICOS REALES</p>
                 <p className="text-muted-foreground mb-2">Oferta Limitada</p>
                 <p className="text-5xl lg:text-6xl font-extrabold text-primary mb-6">$7100 USD</p>
                 <p className="mb-8 text-lg">La tecnología más avanzada para una amplia gama de aplicaciones médicas y estéticas.</p>
