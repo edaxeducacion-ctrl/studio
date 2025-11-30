@@ -81,28 +81,28 @@ export default function Home() {
       <LandingHeader />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section id="inicio" className="relative md:h-screen flex flex-col justify-center items-center text-white text-center">
-          {heroImage && <Image src={heroImage.imageUrl} alt={heroImage.description} data-ai-hint={heroImage.imageHint} fill className="object-cover hidden md:block" />}
-          <div className="absolute inset-0 bg-black/50 hidden md:block" />
+        <section id="inicio" className="relative h-screen flex flex-col justify-center items-center text-white text-center pt-20">
+          {heroImage && <Image src={heroImage.imageUrl} alt={heroImage.description} data-ai-hint={heroImage.imageHint} fill className="object-cover" />}
+          <div className="absolute inset-0 bg-black/50" />
           
-          <div className="relative z-10 w-full pt-20 md:pt-0 bg-background md:bg-transparent text-foreground md:text-white">
-             {heroImage && <Image src={heroImage.imageUrl} alt={heroImage.description} data-ai-hint={heroImage.imageHint} width={800} height={400} className="object-cover w-full h-64 md:hidden" />}
-            <div className="container px-4 py-12 text-center">
-              <h1 className="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in-down">MTG: Excelencia en Medicina Estética y Formación Avanzada</h1>
-              <p className="text-lg md:text-xl max-w-4xl mx-auto mb-8 animate-fade-in-up">La solución mínimamente invasiva para la grasa rebelde, la flacidez y las lesiones vasculares. Sin Bisturí. Sin Cicatrices.</p>
-              <Button asChild size="lg" className="animate-fade-in-up">
-                <a href="#laseev">CONOCE EL LÁSER 10 EN 1</a>
-              </Button>
-            </div>
+          <div className="relative z-10 w-full container px-4 py-12 text-center">
+            <h1 className="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in-down">MTG: Excelencia en Medicina Estética y Formación Avanzada</h1>
+            <p className="text-lg md:text-xl max-w-4xl mx-auto mb-8 animate-fade-in-up">La solución mínimamente invasiva para la grasa rebelde, la flacidez y las lesiones vasculares. Sin Bisturí. Sin Cicatrices.</p>
+            <Button asChild size="lg" className="animate-fade-in-up">
+              <a href="#laseev">CONOCE EL LÁSER 10 EN 1</a>
+            </Button>
           </div>
-          
-          <div className="relative z-10 container mx-auto pb-12 md:mt-auto md:mb-16 md:pb-0">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
+        </section>
+
+        {/* Features Section */}
+        <section className="bg-background">
+          <div className="container mx-auto py-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {featureIcons.map((feature, index) => (
-                <Card key={index} className="bg-white/10 backdrop-blur-md border-white/20 text-white">
-                  <CardContent className="flex flex-col items-center justify-center text-center p-2 sm:p-4 gap-2 sm:gap-3 h-full">
-                    <div className="text-accent">{feature.icon}</div>
-                    <span className="text-xs sm:text-sm font-semibold">{feature.text}</span>
+                <Card key={index} className="bg-card">
+                  <CardContent className="flex flex-col items-center justify-center text-center p-4 sm:p-6 gap-3 h-full">
+                    <div className="text-primary">{feature.icon}</div>
+                    <span className="text-sm sm:text-base font-semibold text-foreground">{feature.text}</span>
                   </CardContent>
                 </Card>
               ))}
