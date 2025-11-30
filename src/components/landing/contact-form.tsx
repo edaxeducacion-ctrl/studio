@@ -47,12 +47,15 @@ export function ContactForm() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    // This is a mock submission. In a real app, you would send this data to your backend.
-    console.log(values);
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    const { name, phone, motive } = values;
+    const message = `Hola, quisiera más información desde la web.\n\n*Nombre:* ${name}\n*Teléfono:* ${phone}\n*Motivo de Consulta:* ${motive}`;
+    const whatsappUrl = `https://wa.me/51947282902?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappUrl, '_blank');
+
     toast({
-      title: "Mensaje Enviado",
-      description: "Gracias por contactarnos. Te responderemos pronto.",
+      title: "Redirigiendo a WhatsApp",
+      description: "Se abrirá una nueva pestaña para enviar tu mensaje.",
     });
     form.reset();
   }
