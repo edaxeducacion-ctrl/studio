@@ -81,11 +81,11 @@ export default function Home() {
       <LandingHeader />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section id="inicio" className="relative h-screen flex flex-col justify-center items-center text-white text-center pt-20">
+        <section id="inicio" className="relative h-screen flex flex-col justify-center items-center text-white text-center">
           {heroImage && <Image src={heroImage.imageUrl} alt={heroImage.description} data-ai-hint={heroImage.imageHint} fill className="object-cover" />}
           <div className="absolute inset-0 bg-black/50" />
           
-          <div className="relative z-10 w-full container px-4 py-12 text-center">
+          <div className="relative z-10 w-full container px-4 py-12 text-center flex flex-col items-center">
             <h1 className="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in-down">MTG: Excelencia en Medicina Estética y Formación Avanzada</h1>
             <p className="text-lg md:text-xl max-w-4xl mx-auto mb-8 animate-fade-in-up">La solución mínimamente invasiva para la grasa rebelde, la flacidez y las lesiones vasculares. Sin Bisturí. Sin Cicatrices.</p>
             <Button asChild size="lg" className="animate-fade-in-up">
@@ -99,7 +99,7 @@ export default function Home() {
           <div className="container mx-auto py-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {featureIcons.map((feature, index) => (
-                <Card key={index} className="bg-card">
+                <Card key={index} className="bg-card animate-fade-in-up">
                   <CardContent className="flex flex-col items-center justify-center text-center p-4 sm:p-6 gap-3 h-full">
                     <div className="text-primary">{feature.icon}</div>
                     <span className="text-sm sm:text-base font-semibold text-foreground">{feature.text}</span>
