@@ -33,10 +33,10 @@ const SectionSubtitle = ({ children, className }: { children: React.ReactNode, c
 );
 
 const featureIcons = [
-  { icon: <Gem />, text: 'Máquina Alta Gama' },
-  { icon: <Waves />, text: 'Doble Longitud de Onda (980nm - 1470nm)' },
-  { icon: <ShieldCheck />, text: 'Garantía 2 Años' },
-  { icon: <GraduationCap />, text: 'Formación Profesional' },
+  { icon: <Gem size={32} />, text: 'Máquina Alta Gama' },
+  { icon: <Waves size={32} />, text: 'Doble Longitud de Onda (980nm - 1470nm)' },
+  { icon: <ShieldCheck size={32} />, text: 'Garantía 2 Años' },
+  { icon: <GraduationCap size={32} />, text: 'Formación Profesional' },
 ];
 
 const laseevFunctions = [
@@ -81,23 +81,25 @@ export default function Home() {
       <LandingHeader />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section id="inicio" className="relative h-screen flex items-center justify-center text-white text-center">
+        <section id="inicio" className="relative h-screen flex flex-col justify-center items-center text-white text-center px-4">
           {heroImage && <Image src={heroImage.imageUrl} alt={heroImage.description} data-ai-hint={heroImage.imageHint} fill className="object-cover" />}
           <div className="absolute inset-0 bg-black/50" />
-          <div className="container px-4 pt-20 relative">
+          <div className="container pt-20 relative z-10">
             <h1 className="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in-down">MTG: Excelencia en Medicina Estética y Formación Avanzada</h1>
             <p className="text-lg md:text-xl max-w-4xl mx-auto mb-8 animate-fade-in-up">La solución mínimamente invasiva para la grasa rebelde, la flacidez y las lesiones vasculares. Sin Bisturí. Sin Cicatrices.</p>
             <Button asChild size="lg" className="animate-fade-in-up">
               <a href="#laseev">CONOCE EL LÁSER 10 EN 1</a>
             </Button>
           </div>
-          <div className="absolute bottom-0 left-0 right-0 bg-background/80 dark:bg-background/50 backdrop-blur-sm p-4">
-            <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div className="relative z-10 container mx-auto mt-auto mb-8 md:mb-16">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {featureIcons.map((feature, index) => (
-                <div key={index} className="flex flex-col items-center gap-2 text-foreground">
-                  <div className="text-primary">{feature.icon}</div>
-                  <span className="text-xs md:text-sm font-semibold">{feature.text}</span>
-                </div>
+                <Card key={index} className="bg-white/10 backdrop-blur-md border-white/20 text-white">
+                  <CardContent className="flex flex-col items-center justify-center text-center p-4 gap-3 h-full">
+                    <div className="text-accent">{feature.icon}</div>
+                    <span className="text-sm font-semibold">{feature.text}</span>
+                  </CardContent>
+                </Card>
               ))}
             </div>
           </div>
