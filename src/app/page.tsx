@@ -257,7 +257,7 @@ export default function Home() {
                 Servicios Caninos: Mister Dog
               </h2>
             </div>
-            <div className="grid md:grid-cols-2 gap-8 items-start">
+            <div className="grid md:grid-cols-2 gap-8 items-start max-w-4xl mx-auto">
               <Card className="bg-white dark:bg-card overflow-hidden flex flex-col">
                 <div className="overflow-hidden aspect-square">
                   {misterDogImage && <Image src={misterDogImage.imageUrl} alt={misterDogImage.description} data-ai-hint={misterDogImage.imageHint} width={600} height={600} className="object-cover w-full h-full" />}
