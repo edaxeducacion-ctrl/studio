@@ -2,6 +2,7 @@ import Image from 'next/image';
 import {
   Activity,
   Bone,
+  Calendar,
   Dog,
   Gem,
   GraduationCap,
@@ -170,8 +171,8 @@ export default function Home() {
                     </CardHeader>
                     <CardFooter>
                        <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
-                         <a href={`https://wa.me/51970616024?text=Hola,%20quisiera%20más%20información%20sobre%20el%20tratamiento%20de%20'${treatment.title}'`} target="_blank" rel="noopener noreferrer">
-                           <WhatsappIcon className="mr-2 h-4 w-4" /> Solicitar Información
+                         <a href="tel:970616024">
+                           <Calendar className="mr-2 h-4 w-4" /> Agendar cita
                          </a>
                        </Button>
                     </CardFooter>
@@ -192,8 +193,8 @@ export default function Home() {
                       </CardHeader>
                       <CardFooter>
                         <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
-                          <a href={`https://wa.me/51970616024?text=Hola,%20quisiera%20más%20información%20sobre%20el%20tratamiento%20de%20'${treatment.title}'`} target="_blank" rel="noopener noreferrer">
-                            <WhatsappIcon className="mr-2 h-4 w-4" /> Solicitar Información
+                          <a href="tel:970616024">
+                            <Calendar className="mr-2 h-4 w-4" /> Agendar cita
                           </a>
                         </Button>
                       </CardFooter>
