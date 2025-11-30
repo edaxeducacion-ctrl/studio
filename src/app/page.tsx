@@ -258,24 +258,42 @@ export default function Home() {
               </h2>
             </div>
             <div className="grid md:grid-cols-2 gap-8 items-start">
-              <Card className="bg-white dark:bg-card overflow-hidden">
-                {misterDogImage && <Image src={misterDogImage.imageUrl} alt={misterDogImage.description} data-ai-hint={misterDogImage.imageHint} width={600} height={400} className="object-cover w-full h-64" />}
+              <Card className="bg-white dark:bg-card overflow-hidden flex flex-col">
+                <div className="overflow-hidden aspect-square">
+                  {misterDogImage && <Image src={misterDogImage.imageUrl} alt={misterDogImage.description} data-ai-hint={misterDogImage.imageHint} width={600} height={600} className="object-cover w-full h-full" />}
+                </div>
                 <CardHeader>
                   <CardTitle className="text-sky-700 dark:text-sky-300">Promoción Baño y Corte</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-grow">
                   <p className="text-4xl font-bold text-sky-800 dark:text-sky-200 mb-2">S/40</p>
                   <p className="text-muted-foreground">Incluye Desparasitación y Delivery Gratis.</p>
                 </CardContent>
+                <CardFooter>
+                  <Button asChild className="w-full bg-sky-500 hover:bg-sky-600 text-white">
+                    <a href="https://wa.me/51947282902?text=Hola,%20quisiera%20más%20información%20sobre%20la%20promoción%20de%20baño%20y%20corte." target="_blank" rel="noopener noreferrer">
+                      Más información
+                    </a>
+                  </Button>
+                </CardFooter>
               </Card>
-              <Card className="bg-white dark:bg-card overflow-hidden">
-                {misterDogCourseImage && <Image src={misterDogCourseImage.imageUrl} alt={misterDogCourseImage.description} data-ai-hint={misterDogCourseImage.imageHint} width={600} height={400} className="object-cover w-full h-64" />}
+              <Card className="bg-white dark:bg-card overflow-hidden flex flex-col">
+                <div className="overflow-hidden aspect-square">
+                  {misterDogCourseImage && <Image src={misterDogCourseImage.imageUrl} alt={misterDogCourseImage.description} data-ai-hint={misterDogCourseImage.imageHint} width={600} height={600} className="object-cover w-full h-full" />}
+                </div>
                 <CardHeader>
                   <CardTitle className="text-sky-700 dark:text-sky-300">Curso Básico de Peluquería Canina</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-grow">
                   <p className="text-muted-foreground">Formación 100% personalizada. Aprende una nueva profesión con alta demanda.</p>
                 </CardContent>
+                <CardFooter>
+                  <Button asChild className="w-full bg-sky-500 hover:bg-sky-600 text-white">
+                    <a href="https://wa.me/51947282902?text=Hola,%20quisiera%20inscribirme%20en%20el%20curso%20de%20peluquería%20canina." target="_blank" rel="noopener noreferrer">
+                      Inscribirme
+                    </a>
+                  </Button>
+                </CardFooter>
               </Card>
             </div>
              <div className="text-center mt-8 text-sky-900 dark:text-sky-200">
