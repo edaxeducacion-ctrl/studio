@@ -81,7 +81,7 @@ export default function Home() {
       <LandingHeader />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section id="inicio" className="relative h-screen flex flex-col justify-center items-center text-white text-center">
+        <section id="inicio" className="relative pt-24 md:pt-32 pb-12 md:pb-24 flex flex-col justify-center items-center text-white text-center min-h-[60vh] md:min-h-screen">
           {heroImage && <Image src={heroImage.imageUrl} alt={heroImage.description} data-ai-hint={heroImage.imageHint} fill className="object-cover" />}
           <div className="absolute inset-0 bg-black/50" />
           
@@ -93,13 +93,13 @@ export default function Home() {
             </Button>
           </div>
         </section>
-
+        
         {/* Features Section */}
-        <section className="bg-background">
-          <div className="container mx-auto py-8">
+        <section className="bg-background py-8 md:py-0 md:-mt-16 relative z-20">
+          <div className="container mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {featureIcons.map((feature, index) => (
-                <Card key={index} className="bg-card animate-fade-in-up">
+                <Card key={index} className="bg-card shadow-lg animate-fade-in-up transition-transform duration-300 hover:-translate-y-2">
                   <CardContent className="flex flex-col items-center justify-center text-center p-4 sm:p-6 gap-3 h-full">
                     <div className="text-primary">{feature.icon}</div>
                     <span className="text-sm sm:text-base font-semibold text-foreground">{feature.text}</span>
@@ -109,6 +109,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
 
         {/* Star Product Section */}
         <section id="laseev" className="py-20">
