@@ -11,6 +11,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import Image from 'next/image';
 
 const navLinks = [
   { href: '#inicio', label: 'INICIO' },
@@ -31,8 +32,8 @@ export function LandingHeader() {
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link href="#inicio" className="text-lg md:text-xl font-bold text-primary">
-          Medic Teaching Group <span className="hidden sm:inline">- MTG</span>
+        <Link href="#inicio" className="flex items-center">
+          <Image src="https://i.imgur.com/hk8p7DX.png" alt="Medic Teaching Group Logo" width={150} height={40} />
         </Link>
         <nav className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
