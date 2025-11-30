@@ -232,7 +232,7 @@ export default function Home() {
                     <CardFooter>
                       <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
                         <a href={`https://wa.me/51970616024?text=Hola,%20quisiera%20más%20información%20sobre%20el%20curso%20de%20'${course.title}'`} target="_blank" rel="noopener noreferrer">
-                          <WhatsappIcon className="mr-2 h-4 w-4" /> Solicitar Información
+                          <WhatsappIcon className="mr-2 h-4 w-4" /> Inscribirme
                         </a>
                       </Button>
                     </CardFooter>
