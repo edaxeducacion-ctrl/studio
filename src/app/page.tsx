@@ -70,7 +70,7 @@ const courses = [
   { id: 'course-vascular', title: 'Curso Vascular Facial' },
   { id: 'course-faloplastia', title: 'Curso de Faloplastia' },
   { id: 'course-labioplastia', title: 'Curso de Labioplastia' },
-  { id: 'course-rinomodelacion', title: 'Curso de Rinomodelación' },
+  { id: 'course-rinomodelacion', title: 'Curso de Rinomodelación Labios' },
   { id: 'course-mela', title: 'Curso de MELA Corporal' },
 ];
 
