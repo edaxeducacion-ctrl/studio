@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -8,6 +8,7 @@ import { Menu, Phone } from 'lucide-react';
 import {
   Sheet,
   SheetContent,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
 
@@ -64,7 +65,8 @@ export function LandingHeader() {
                 <span className="sr-only">Abrir menú</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-card">
+            <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-card p-0">
+               <SheetTitle className="sr-only">Menú de Navegación</SheetTitle>
               <div className="flex flex-col h-full p-6">
                 <Link href="#inicio" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-primary mb-8">
                   Medic Teaching Group
