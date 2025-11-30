@@ -34,8 +34,8 @@ export function LandingHeader() {
   return (
     <header
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isScrolled ? 'bg-card shadow-md py-2' : 'py-4'
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-card shadow-md',
+        isScrolled ? 'py-2' : 'py-4'
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
