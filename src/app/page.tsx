@@ -24,6 +24,7 @@ import { ContactForm } from '@/components/landing/contact-form';
 import { ToothIcon } from '@/components/icons/tooth-icon';
 import { EntIcon } from '@/components/icons/ent-icon';
 import Link from 'next/link';
+import { WhatsappIcon } from '@/components/icons/whatsapp-icon';
 
 const SectionTitle = ({ children, className }: { children: React.ReactNode, className?: string }) => (
   <h2 className={`text-3xl md:text-4xl font-bold text-center text-primary mb-4 ${className}`}>{children}</h2>
@@ -96,7 +97,7 @@ export default function Home() {
         </section>
         
         {/* Features Section */}
-        <section className="bg-background py-8 md:py-12 relative z-20 -mt-16">
+        <section className="bg-background py-8 md:py-12 relative z-20">
           <div className="container mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {featureIcons.map((feature, index) => (
@@ -168,9 +169,9 @@ export default function Home() {
                       <CardDescription>{treatment.desc}</CardDescription>
                     </CardHeader>
                     <CardFooter>
-                       <Button asChild variant="outline" className="w-full">
-                         <a href="#contacto">
-                           <Info className="mr-2" /> Más Información
+                       <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
+                         <a href="https://wa.me/51970616024?text=Hola,%20quisiera%20más%20información%20sobre%20el%20tratamiento%20de%20'${treatment.title}'" target="_blank" rel="noopener noreferrer">
+                           <WhatsappIcon className="mr-2" /> Solicitar Información
                          </a>
                        </Button>
                     </CardFooter>
