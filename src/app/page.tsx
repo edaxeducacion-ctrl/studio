@@ -92,12 +92,12 @@ export default function Home() {
             </Button>
           </div>
           <div className="relative z-10 container mx-auto mt-auto mb-8 md:mb-16">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
               {featureIcons.map((feature, index) => (
                 <Card key={index} className="bg-white/10 backdrop-blur-md border-white/20 text-white">
-                  <CardContent className="flex flex-col items-center justify-center text-center p-4 gap-3 h-full">
+                  <CardContent className="flex flex-col items-center justify-center text-center p-2 sm:p-4 gap-2 sm:gap-3 h-full">
                     <div className="text-accent">{feature.icon}</div>
-                    <span className="text-sm font-semibold">{feature.text}</span>
+                    <span className="text-xs sm:text-sm font-semibold">{feature.text}</span>
                   </CardContent>
                 </Card>
               ))}
@@ -254,5 +254,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
