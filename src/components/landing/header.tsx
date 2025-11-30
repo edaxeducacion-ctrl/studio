@@ -8,6 +8,7 @@ import { Menu, Phone } from 'lucide-react';
 import {
   Sheet,
   SheetContent,
+  SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
@@ -40,7 +41,7 @@ export function LandingHeader() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+              className="relative text-sm font-medium text-foreground/80 transition-colors hover:text-primary after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
             >
               {link.label}
             </Link>
@@ -67,8 +68,10 @@ export function LandingHeader() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-card p-0">
-               <SheetTitle>Menú de Navegación</SheetTitle>
-              <div className="flex flex-col h-full p-6">
+               <SheetHeader className="p-6">
+                 <SheetTitle className="sr-only">Menú de Navegación</SheetTitle>
+               </SheetHeader>
+              <div className="flex flex-col h-full p-6 pt-0">
                 <Link href="#inicio" onClick={() => setIsMobileMenuOpen(false)} className="mb-8">
                   <Image src="https://i.imgur.com/hk8p7DX.png" alt="Medic Teaching Group Logo" width={180} height={48} />
                 </Link>
