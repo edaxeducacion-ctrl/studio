@@ -74,6 +74,7 @@ export default function Home() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
   const laseevMachineImage = PlaceHolderImages.find(p => p.id === 'laseev-pro-machine');
   const misterDogImage = PlaceHolderImages.find(p => p.id === 'mister-dog-grooming');
+  const misterDogCourseImage = PlaceHolderImages.find(p => p.id === 'mister-dog-course');
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -81,9 +82,9 @@ export default function Home() {
       <main className="flex-grow">
         {/* Hero Section */}
         <section id="inicio" className="relative h-screen flex items-center justify-center text-white text-center">
-          {heroImage && <Image src={heroImage.imageUrl} alt={heroImage.description} data-ai-hint={heroImage.imageHint} fill className="object-cover -z-20" />}
-          <div className="absolute inset-0 bg-black/50 -z-10" />
-          <div className="container px-4 pt-20">
+          {heroImage && <Image src={heroImage.imageUrl} alt={heroImage.description} data-ai-hint={heroImage.imageHint} fill className="object-cover" />}
+          <div className="absolute inset-0 bg-black/50" />
+          <div className="container px-4 pt-20 relative">
             <h1 className="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in-down">MTG: Excelencia en Medicina Estética y Formación Avanzada</h1>
             <p className="text-lg md:text-xl max-w-4xl mx-auto mb-8 animate-fade-in-up">La solución mínimamente invasiva para la grasa rebelde, la flacidez y las lesiones vasculares. Sin Bisturí. Sin Cicatrices.</p>
             <Button asChild size="lg" className="animate-fade-in-up">
@@ -200,33 +201,30 @@ export default function Home() {
                 Servicios Caninos: Mister Dog
               </h2>
             </div>
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="space-y-8">
-                <Card className="bg-white dark:bg-card">
-                  <CardHeader>
-                    <CardTitle className="text-sky-700 dark:text-sky-300">Promoción Baño y Corte</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-4xl font-bold text-sky-800 dark:text-sky-200 mb-2">S/40</p>
-                    <p className="text-muted-foreground">Incluye Desparasitación y Delivery Gratis.</p>
-                  </CardContent>
-                </Card>
-                <Card className="bg-white dark:bg-card">
-                  <CardHeader>
-                    <CardTitle className="text-sky-700 dark:text-sky-300">Curso Básico de Peluquería Canina</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">Formación 100% personalizada. Aprende una nueva profesión con alta demanda.</p>
-                  </CardContent>
-                </Card>
-                <div className="text-center md:text-left text-sky-900 dark:text-sky-200">
-                  <p><strong>Ubicación:</strong> Los Amatistas #125, S.J.L.</p>
-                  <p><strong>Teléfono:</strong> <a href="tel:+51947282902" className="hover:underline">+51 947 282 902</a></p>
-                </div>
-              </div>
-              <div>
-                {misterDogImage && <Image src={misterDogImage.imageUrl} alt={misterDogImage.description} data-ai-hint={misterDogImage.imageHint} width={600} height={400} className="rounded-lg shadow-xl" />}
-              </div>
+            <div className="grid md:grid-cols-2 gap-8 items-start">
+              <Card className="bg-white dark:bg-card overflow-hidden">
+                {misterDogImage && <Image src={misterDogImage.imageUrl} alt={misterDogImage.description} data-ai-hint={misterDogImage.imageHint} width={600} height={400} className="object-cover w-full h-64" />}
+                <CardHeader>
+                  <CardTitle className="text-sky-700 dark:text-sky-300">Promoción Baño y Corte</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-4xl font-bold text-sky-800 dark:text-sky-200 mb-2">S/40</p>
+                  <p className="text-muted-foreground">Incluye Desparasitación y Delivery Gratis.</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-white dark:bg-card overflow-hidden">
+                {misterDogCourseImage && <Image src={misterDogCourseImage.imageUrl} alt={misterDogCourseImage.description} data-ai-hint={misterDogCourseImage.imageHint} width={600} height={400} className="object-cover w-full h-64" />}
+                <CardHeader>
+                  <CardTitle className="text-sky-700 dark:text-sky-300">Curso Básico de Peluquería Canina</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Formación 100% personalizada. Aprende una nueva profesión con alta demanda.</p>
+                </CardContent>
+              </Card>
+            </div>
+             <div className="text-center mt-8 text-sky-900 dark:text-sky-200">
+              <p><strong>Ubicación:</strong> Los Amatistas #125, S.J.L.</p>
+              <p><strong>Teléfono:</strong> <a href="tel:+51947282902" className="hover:underline">+51 947 282 902</a></p>
             </div>
           </div>
         </section>
@@ -254,3 +252,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
