@@ -18,6 +18,7 @@ const navLinks = [
   { href: '/', label: 'INICIO' },
   { href: '/tratamientos', label: 'TRATAMIENTOS' },
   { href: '/cursos', label: 'CURSOS' },
+  { href: '/mister-dog', label: 'MISTER DOG' },
   { href: '/contacto', label: 'CONTACTO' },
 ];
 
@@ -47,9 +48,6 @@ export function LandingHeader() {
           ))}
         </nav>
         <div className="hidden lg:flex items-center gap-4">
-          <Button asChild className="bg-sky-600 hover:bg-sky-700 text-white font-bold">
-            <Link href="/#mister-dog">MISTER DOG</Link>
-          </Button>
           <a
             href="tel:+51984348389"
             className="flex items-center gap-2 text-sm font-semibold text-primary"
@@ -87,9 +85,6 @@ export function LandingHeader() {
                   ))}
                 </nav>
                 <div className="mt-auto flex flex-col gap-4">
-                   <Button asChild size="lg" onClick={() => setIsMobileMenuOpen(false)} className="bg-sky-600 hover:bg-sky-700 text-white font-bold">
-                    <Link href="/#mister-dog">MISTER DOG</Link>
-                  </Button>
                   <a
                     href="tel:+51984348389"
                     className="flex items-center justify-center gap-2 text-lg font-semibold text-primary"
