@@ -52,6 +52,7 @@ const laseevFunctions = [
 export default function Home() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
   const laseevMachineImage = PlaceHolderImages.find(p => p.id === 'laseev-pro-machine');
+  const dissolveFatImage = PlaceHolderImages.find(p => p.id === 'dissolve-fat');
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -100,8 +101,28 @@ export default function Home() {
           <div className="container px-4">
             <SectionTitle>LASEEV Pro: Endoláser Multifuncional 10 en 1</SectionTitle>
             <SectionSubtitle>Plataforma láser dual certificada (FDA/ISO) para procedimientos seguros y efectivos. Energía de alta precisión con potencia ajustable de 1 a 30 watts.</SectionSubtitle>
+            
+            <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+              <div className="flex justify-center animate-fade-in-up">
+                {dissolveFatImage && <Image src={dissolveFatImage.imageUrl} alt={dissolveFatImage.description} data-ai-hint={dissolveFatImage.imageHint} width={500} height={500} className="rounded-lg shadow-2xl object-cover" />}
+              </div>
+              <div className="flex flex-col items-center md:items-start text-center md:text-left">
+                <h3 className="text-2xl font-bold text-primary/90 mb-4">¿Deseas Disolver Grasa y Tensar la Piel en un solo procedimiento?</h3>
+                <p className="mb-4 text-muted-foreground">Endoláser multifuncional es la solución mínimamente invasiva para la grasa rebelde. Disuelve las células adiposas y, simultáneamente, tensa la piel para una silueta definida. ¡Remodelación corporal avanzada con una recuperación más rápida!</p>
+              </div>
+            </div>
+
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="flex justify-center animate-fade-in-up relative">
+               <div className="flex flex-col items-center md:items-start text-center md:text-left order-2 md:order-1">
+                <p className="mb-6 font-semibold">SIN BISTURÍ. SIN CICATRICES CON RESULTADOS CLÍNICOS REALES</p>
+                <p className="text-muted-foreground mb-2">Oferta Limitada</p>
+                <p className="text-5xl lg:text-6xl font-extrabold text-primary mb-6">$7100 USD</p>
+                <p className="mb-8 text-lg">La tecnología más avanzada para una amplia gama de aplicaciones médicas y estéticas.</p>
+                <Button asChild size="lg">
+                  <a href="https://wa.me/51947282902?text=Hola,%20quisiera%20solicitar%20la%20ficha%20técnica%20del%20LASEEV%20Pro." target="_blank" rel="noopener noreferrer">SOLICITAR FICHA TÉCNICA</a>
+                </Button>
+              </div>
+              <div className="flex justify-center animate-fade-in-up relative order-1 md:order-2">
                 {laseevMachineImage && <Image src={laseevMachineImage.imageUrl} alt={laseevMachineImage.description} data-ai-hint={laseevMachineImage.imageHint} width={500} height={500} className="rounded-lg shadow-2xl" />}
                 <Image 
                   src="https://i.imgur.com/3y9gwb3.png" 
@@ -111,18 +132,8 @@ export default function Home() {
                   className="absolute bottom-5"
                 />
               </div>
-              <div className="flex flex-col items-center md:items-start text-center md:text-left">
-                <h3 className="text-2xl font-bold text-primary/90 mb-4">¿Deseas Disolver Grasa y Tensar la Piel en un solo procedimiento?</h3>
-                <p className="mb-4 text-muted-foreground">Endoláser multifuncional es la solución mínimamente invasiva para la grasa rebelde. Disuelve las células adiposas y, simultáneamente, tensa la piel para una silueta definida. ¡Remodelación corporal avanzada con una recuperación más rápida!</p>
-                <p className="mb-6 font-semibold">SIN BISTURÍ. SIN CICATRICES CON RESULTADOS CLÍNICOS REALES</p>
-                <p className="text-muted-foreground mb-2">Oferta Limitada</p>
-                <p className="text-5xl lg:text-6xl font-extrabold text-primary mb-6">$7100 USD</p>
-                <p className="mb-8 text-lg">La tecnología más avanzada para una amplia gama de aplicaciones médicas y estéticas.</p>
-                <Button asChild size="lg">
-                  <a href="https://wa.me/51947282902?text=Hola,%20quisiera%20solicitar%20la%20ficha%20técnica%20del%20LASEEV%20Pro." target="_blank" rel="noopener noreferrer">SOLICITAR FICHA TÉCNICA</a>
-                </Button>
-              </div>
             </div>
+
             <div className="mt-20">
               <h3 className="text-2xl font-bold text-center text-primary/90 mb-8">10 Funciones en 1 Equipo</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">

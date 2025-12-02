@@ -13,6 +13,12 @@
       "imageHint": "medical equipment"
     },
     {
+      "id": "dissolve-fat",
+      "description": "A doctor performing a facial procedure on a patient.",
+      "imageUrl": "https://i.imgur.com/JhYikLR.jpeg",
+      "imageHint": "facial procedure"
+    },
+    {
       "id": "laseev-endolifting",
       "description": "Close-up of a laser lipolysis procedure on the chin area.",
       "imageUrl": "https://i.imgur.com/gYfX3zW.jpeg",
