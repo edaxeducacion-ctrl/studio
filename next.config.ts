@@ -51,6 +51,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.edwardspodologos.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'gynemid.mx',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
