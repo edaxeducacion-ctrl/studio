@@ -101,8 +101,15 @@ export default function Home() {
             <SectionTitle>LASEEV Pro: Endoláser Multifuncional 10 en 1</SectionTitle>
             <SectionSubtitle>Plataforma láser dual certificada (FDA/ISO) para procedimientos seguros y efectivos. Energía de alta precisión con potencia ajustable de 1 a 30 watts.</SectionSubtitle>
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="flex justify-center animate-fade-in-up">
+              <div className="flex justify-center animate-fade-in-up relative">
                 {laseevMachineImage && <Image src={laseevMachineImage.imageUrl} alt={laseevMachineImage.description} data-ai-hint={laseevMachineImage.imageHint} width={500} height={500} className="rounded-lg shadow-2xl" />}
+                <Image 
+                  src="https://i.imgur.com/3y9gwb3.png" 
+                  alt="Sello sin bisturí, sin cicatrices" 
+                  width={400} 
+                  height={100} 
+                  className="absolute bottom-5"
+                />
               </div>
               <div className="flex flex-col items-center md:items-start text-center md:text-left">
                 <h3 className="text-2xl font-bold text-primary/90 mb-4">¿Deseas Disolver Grasa y Tensar la Piel en un solo procedimiento?</h3>
