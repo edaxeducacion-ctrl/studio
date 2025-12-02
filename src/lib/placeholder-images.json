@@ -13,6 +13,66 @@
       "imageHint": "medical equipment"
     },
     {
+      "id": "laseev-endolifting",
+      "description": "Close-up of a laser lipolysis procedure on the chin area.",
+      "imageUrl": "https://i.imgur.com/gYfX3zW.jpeg",
+      "imageHint": "laser lipolysis"
+    },
+    {
+      "id": "laseev-vascular",
+      "description": "Treatment of spider veins on a leg.",
+      "imageUrl": "https://i.imgur.com/s6n5F3p.jpeg",
+      "imageHint": "spider veins"
+    },
+    {
+      "id": "laseev-onicomicosis",
+      "description": "Laser treatment for toenail fungus.",
+      "imageUrl": "https://i.imgur.com/O6P2j7W.jpeg",
+      "imageHint": "toenail fungus"
+    },
+    {
+      "id": "laseev-vaginal",
+      "description": "Abstract image representing vaginal rejuvenation.",
+      "imageUrl": "https://i.imgur.com/kS9w1h8.jpeg",
+      "imageHint": "abstract female health"
+    },
+    {
+      "id": "laseev-evlt",
+      "description": "Doctor performing an endovenous laser treatment on a patient's leg.",
+      "imageUrl": "https://i.imgur.com/8Q0vY6j.jpeg",
+      "imageHint": "varicose veins treatment"
+    },
+    {
+      "id": "laseev-pldd",
+      "description": "Medical illustration of a herniated disc.",
+      "imageUrl": "https://i.imgur.com/uTj8fO7.jpeg",
+      "imageHint": "herniated disc"
+    },
+    {
+      "id": "laseev-ent",
+      "description": "An ENT specialist using medical equipment.",
+      "imageUrl": "https://i.imgur.com/d9j8v2L.jpeg",
+      "imageHint": "ent specialist"
+    },
+    {
+      "id": "laseev-dental",
+      "description": "Dentist performing a laser procedure on a patient.",
+      "imageUrl": "https://i.imgur.com/T5I2o4W.jpeg",
+      "imageHint": "dental laser"
+    },
+    {
+      "id": "laseev-physio",
+      "description": "Physiotherapist applying laser therapy to a patient's shoulder.",
+      "imageUrl": "https://i.imgur.com/x0q4w9j.jpeg",
+      "imageHint": "laser physiotherapy"
+    },
+    {
+      "id": "laseev-proctology",
+      "description": "Abstract medical image related to proctology.",
+      "imageUrl": "https://i.imgur.com/5J3c2z5.jpeg",
+      "imageHint": "medical surgery"
+    },
+    {
       "id": "treatment-endolifting",
       "description": "A patient receiving a non-invasive facial treatment.",
       "imageUrl": "https://i.imgur.com/clViTJF.jpeg",

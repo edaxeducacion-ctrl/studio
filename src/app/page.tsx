@@ -37,16 +37,16 @@ const featureIcons = [
 ];
 
 const laseevFunctions = [
-  { icon: <HeartPulse />, text: 'Endolifting / Lipólisis', description: 'Rejuvenecimiento y eliminación de grasa localizada.' },
-  { icon: <Waves />, text: 'Eliminación de Vasos', description: 'Tratamiento de arañas vasculares y telangiectasias.' },
-  { icon: <Hand />, text: 'Onicomicosis', description: 'Tratamiento láser para hongos en las uñas.' },
-  { icon: <Venus />, text: 'Rejuvenecimiento Vaginal', description: 'Tensado y rejuvenecimiento íntimo femenino.' },
-  { icon: <Stethoscope />, text: 'EVLT', description: 'Tratamiento endovenoso para várices.' },
-  { icon: <Bone />, text: 'PLDD', description: 'Descompresión percutánea de disco con láser.' },
-  { icon: <EntIcon />, text: 'Función ENT', description: 'Aplicaciones en Otorrinolaringología.' },
-  { icon: <ToothIcon />, text: 'Función Dental', description: 'Procedimientos odontológicos láser avanzados.' },
-  { icon: <Activity />, text: 'Fisioterapia', description: 'Terapia para alivio del dolor y rehabilitación.' },
-  { icon: <Scissors />, text: 'Hemorroides / Corte', description: 'Cirugía proctológica y corte de tejidos blandos.' },
+  { id: 'laseev-endolifting', icon: <HeartPulse />, text: 'Endolifting / Lipólisis', description: 'Rejuvenecimiento y eliminación de grasa localizada.' },
+  { id: 'laseev-vascular', icon: <Waves />, text: 'Eliminación de Vasos', description: 'Tratamiento de arañas vasculares y telangiectasias.' },
+  { id: 'laseev-onicomicosis', icon: <Hand />, text: 'Onicomicosis', description: 'Tratamiento láser para hongos en las uñas.' },
+  { id: 'laseev-vaginal', icon: <Venus />, text: 'Rejuvenecimiento Vaginal', description: 'Tensado y rejuvenecimiento íntimo femenino.' },
+  { id: 'laseev-evlt', icon: <Stethoscope />, text: 'EVLT', description: 'Tratamiento endovenoso para várices.' },
+  { id: 'laseev-pldd', icon: <Bone />, text: 'PLDD', description: 'Descompresión percutánea de disco con láser.' },
+  { id: 'laseev-ent', icon: <EntIcon />, text: 'Función ENT', description: 'Aplicaciones en Otorrinolaringología.' },
+  { id: 'laseev-dental', icon: <ToothIcon />, text: 'Función Dental', description: 'Procedimientos odontológicos láser avanzados.' },
+  { id: 'laseev-physio', icon: <Activity />, text: 'Fisioterapia', description: 'Terapia para alivio del dolor y rehabilitación.' },
+  { id: 'laseev-proctology', icon: <Scissors />, text: 'Hemorroides / Corte', description: 'Cirugía proctológica y corte de tejidos blandos.' },
 ];
 
 export default function Home() {
@@ -111,18 +111,25 @@ export default function Home() {
             </div>
             <div className="mt-20">
               <h3 className="text-2xl font-bold text-center text-primary/90 mb-8">10 Funciones en 1 Equipo</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6">
-                {laseevFunctions.map((func, index) => (
-                  <Card key={index} className="text-center hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 flex flex-col">
-                    <CardHeader className="items-center">
-                      <div className="bg-primary/10 text-primary p-3 rounded-full mb-2">{func.icon}</div>
-                      <CardTitle className="text-base font-semibold">{func.text}</CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-4 pb-4">
-                      <p className="text-sm text-muted-foreground">{func.description}</p>
-                    </CardContent>
-                  </Card>
-                ))}
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                {laseevFunctions.map((func) => {
+                  const image = PlaceHolderImages.find(p => p.id === func.id);
+                  return (
+                    <Card key={func.id} className="overflow-hidden group flex flex-col text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                       {image && (
+                         <div className="overflow-hidden aspect-square relative">
+                           <Image src={image.imageUrl} alt={image.description} data-ai-hint={image.imageHint} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
+                         </div>
+                       )}
+                       <CardHeader className="flex-grow pt-4">
+                         <CardTitle className="text-base font-semibold">{func.text}</CardTitle>
+                       </CardHeader>
+                       <CardContent className="px-4 pb-4">
+                         <p className="text-sm text-muted-foreground">{func.description}</p>
+                       </CardContent>
+                     </Card>
+                  );
+                })}
               </div>
             </div>
           </div>
