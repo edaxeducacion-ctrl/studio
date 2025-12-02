@@ -8,7 +8,6 @@ import {
   Hand,
   HeartPulse,
   Quote,
-  Scissors,
   ShieldCheck,
   Stethoscope,
   Venus,
@@ -34,10 +33,10 @@ const SectionSubtitle = ({ children, className }: { children: React.ReactNode, c
 );
 
 const featureIcons = [
-    { id: 'laseev-pro-machine', text: 'Máquina Alta Gama' },
-    { id: 'feature-wavelength', text: 'Doble Longitud de Onda (980nm - 1470nm)' },
-    { id: 'feature-warranty', text: 'Garantía 2 Años' },
-    { id: 'feature-training', text: 'Formación Profesional' },
+    { icon: <Gem className="w-10 h-10 text-primary" />, text: 'Máquina Alta Gama' },
+    { icon: <Waves className="w-10 h-10 text-primary" />, text: 'Doble Longitud de Onda (980nm - 1470nm)' },
+    { icon: <ShieldCheck className="w-10 h-10 text-primary" />, text: 'Garantía 2 Años' },
+    { icon: <GraduationCap className="w-10 h-10 text-primary" />, text: 'Formación Profesional' },
   ];
 
 const laseevFunctions = [
@@ -50,7 +49,7 @@ const laseevFunctions = [
   { id: 'laseev-ent', icon: <EntIcon />, text: 'Función ENT', description: 'Aplicaciones en Otorrinolaringología.' },
   { id: 'laseev-dental', icon: <ToothIcon />, text: 'Función Dental', description: 'Procedimientos odontológicos láser avanzados.' },
   { id: 'laseev-physio', icon: <Activity />, text: 'Fisioterapia', description: 'Terapia para alivio del dolor y rehabilitación.' },
-  { id: 'laseev-proctology', icon: <Scissors />, text: 'Hemorroides / Corte', description: 'Cirugía proctológica y corte de tejidos blandos.' },
+  { id: 'laseev-proctology', icon: <HeartPulse />, text: 'Hemorroides / Corte', description: 'Cirugía proctológica y corte de tejidos blandos.' },
 ];
 
 const testimonials = [
@@ -127,21 +126,14 @@ export default function Home() {
         <section className="bg-background py-8 md:py-12 relative z-20">
           <div className="container mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {featureIcons.map((feature, index) => {
-                const image = PlaceHolderImages.find(p => p.id === feature.id);
-                return (
-                  <Card key={index} className="bg-card shadow-lg animate-fade-in-up transition-transform duration-300 hover:-translate-y-2 overflow-hidden flex flex-col">
-                    {image && (
-                      <div className="overflow-hidden aspect-video relative">
-                        <Image src={image.imageUrl} alt={image.description} data-ai-hint={image.imageHint} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
-                      </div>
-                    )}
-                    <CardContent className="flex flex-col items-center justify-center text-center p-4 sm:p-6 gap-3 h-full">
-                      <span className="text-sm sm:text-base font-semibold text-foreground">{feature.text}</span>
-                    </CardContent>
-                  </Card>
-                );
-              })}
+              {featureIcons.map((feature, index) => (
+                <Card key={index} className="bg-card shadow-lg animate-fade-in-up transition-transform duration-300 hover:-translate-y-2">
+                  <CardContent className="flex flex-col items-center justify-center text-center p-4 sm:p-6 gap-3 h-full">
+                    {feature.icon}
+                    <span className="text-sm sm:text-base font-semibold text-foreground">{feature.text}</span>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </section>
@@ -201,55 +193,56 @@ export default function Home() {
                 })}
               </div>
             </div>
-          </div>
-        </section>
 
-        {/* Testimonials Section */}
-        <section id="testimonios" className="py-20 bg-background">
-          <div className="container px-4">
-            <SectionTitle>Testimonios de Clientes</SectionTitle>
-            <SectionSubtitle>Vea lo que dicen los profesionales que ya confían en nuestra tecnología.</SectionSubtitle>
-            <div className="grid md:grid-cols-3 gap-8">
-              {testimonials.map((testimonial) => {
-                const avatarImage = PlaceHolderImages.find(p => p.id === testimonial.avatarId);
-                return (
-                  <Card key={testimonial.id} className="flex flex-col">
-                    <CardHeader className="flex flex-row items-center gap-4">
-                      <Avatar className='h-14 w-14'>
-                        {avatarImage && <AvatarImage src={avatarImage.imageUrl} alt={avatarImage.description} data-ai-hint={avatarImage.imageHint} />}
-                        <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                      </Avatar>
-                      <div>
-                        <CardTitle className="text-lg">{testimonial.name}</CardTitle>
-                        <p className="text-sm text-muted-foreground">{testimonial.title}</p>
-                      </div>
-                    </CardHeader>
-                    <CardContent className="flex-grow">
-                      <Quote className="w-6 h-6 text-primary/50 mb-2" />
-                      <p className="text-muted-foreground">{testimonial.quote}</p>
-                    </CardContent>
-                  </Card>
-                )
-              })}
-            </div>
-          </div>
-        </section>
+            {/* Testimonials Section */}
+            <section id="testimonios" className="py-20 bg-background">
+              <div className="container px-4">
+                <SectionTitle>Testimonios de Clientes</SectionTitle>
+                <SectionSubtitle>Vea lo que dicen los profesionales que ya confían en nuestra tecnología.</SectionSubtitle>
+                <div className="grid md:grid-cols-3 gap-8">
+                  {testimonials.map((testimonial) => {
+                    const avatarImage = PlaceHolderImages.find(p => p.id === testimonial.avatarId);
+                    return (
+                      <Card key={testimonial.id} className="flex flex-col">
+                        <CardHeader className="flex flex-row items-center gap-4">
+                          <Avatar className='h-14 w-14'>
+                            {avatarImage && <AvatarImage src={avatarImage.imageUrl} alt={avatarImage.description} data-ai-hint={avatarImage.imageHint} />}
+                            <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                          </Avatar>
+                          <div>
+                            <CardTitle className="text-lg">{testimonial.name}</CardTitle>
+                            <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                          </div>
+                        </CardHeader>
+                        <CardContent className="flex-grow">
+                          <Quote className="w-6 h-6 text-primary/50 mb-2" />
+                          <p className="text-muted-foreground">{testimonial.quote}</p>
+                        </CardContent>
+                      </Card>
+                    )
+                  })}
+                </div>
+              </div>
+            </section>
 
-        {/* FAQ Section */}
-        <section id="faq" className="py-20">
-          <div className="container px-4 max-w-3xl mx-auto">
-            <SectionTitle>Preguntas Frecuentes</SectionTitle>
-            <SectionSubtitle>¿Tienes dudas? Aquí resolvemos las consultas más habituales sobre el equipo LASEEV Pro.</SectionSubtitle>
-            <Accordion type="single" collapsible className="w-full">
-              {faqItems.map((item) => (
-                <AccordionItem key={item.id} value={item.id}>
-                  <AccordionTrigger className="text-left font-semibold text-lg">{item.question}</AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground text-base">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+            {/* FAQ Section */}
+            <section id="faq" className="py-20">
+              <div className="container px-4 max-w-3xl mx-auto">
+                <SectionTitle>Preguntas Frecuentes</SectionTitle>
+                <SectionSubtitle>¿Tienes dudas? Aquí resolvemos las consultas más habituales sobre el equipo LASEEV Pro.</SectionSubtitle>
+                <Accordion type="single" collapsible className="w-full">
+                  {faqItems.map((item) => (
+                    <AccordionItem key={item.id} value={item.id}>
+                      <AccordionTrigger className="text-left font-semibold text-lg">{item.question}</AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground text-base">
+                        {item.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
+            </section>
+
           </div>
         </section>
 
