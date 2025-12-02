@@ -39,6 +39,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.infoblancosobrenegro.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'encrypted-tbn0.gstatic.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
