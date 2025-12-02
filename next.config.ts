@@ -63,6 +63,12 @@ const nextConfig: NextConfig = {
         hostname: 'markmedicalcare.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'image.made-in-china.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
