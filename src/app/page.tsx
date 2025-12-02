@@ -124,13 +124,6 @@ export default function Home() {
               </div>
               <div className="flex justify-center animate-fade-in-up relative order-1 md:order-2">
                 {laseevMachineImage && <Image src={laseevMachineImage.imageUrl} alt={laseevMachineImage.description} data-ai-hint={laseevMachineImage.imageHint} width={500} height={500} className="rounded-lg shadow-2xl" />}
-                <Image 
-                  src="https://i.imgur.com/3y9gwb3.png" 
-                  alt="Sello sin bisturí, sin cicatrices" 
-                  width={400} 
-                  height={100} 
-                  className="absolute bottom-5"
-                />
               </div>
             </div>
 
