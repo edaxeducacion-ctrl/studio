@@ -7,6 +7,7 @@ import {
   GraduationCap,
   Hand,
   HeartPulse,
+  Quote,
   Scissors,
   ShieldCheck,
   Stethoscope,
@@ -20,6 +21,9 @@ import { LandingHeader } from '@/components/landing/header';
 import { LandingFooter } from '@/components/landing/footer';
 import { ToothIcon } from '@/components/icons/tooth-icon';
 import { EntIcon } from '@/components/icons/ent-icon';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+
 
 const SectionTitle = ({ children, className }: { children: React.ReactNode, className?: string }) => (
   <h2 className={`text-3xl md:text-4xl font-bold text-center text-primary mb-4 ${className}`}>{children}</h2>
@@ -47,6 +51,53 @@ const laseevFunctions = [
   { id: 'laseev-dental', icon: <ToothIcon />, text: 'Función Dental', description: 'Procedimientos odontológicos láser avanzados.' },
   { id: 'laseev-physio', icon: <Activity />, text: 'Fisioterapia', description: 'Terapia para alivio del dolor y rehabilitación.' },
   { id: 'laseev-proctology', icon: <Scissors />, text: 'Hemorroides / Corte', description: 'Cirugía proctológica y corte de tejidos blandos.' },
+];
+
+const testimonials = [
+  {
+    id: 'testimonial-1',
+    name: 'Dr. Alejandro Vargas',
+    title: 'Cirujano Plástico',
+    quote: 'El LASEEV Pro ha revolucionado mi práctica. Los resultados en lipólisis facial son impresionantes y mis pacientes están encantados con la rápida recuperación.',
+    avatarId: 'avatar-doctor-male'
+  },
+  {
+    id: 'testimonial-2',
+    name: 'Dra. Sofia Contreras',
+    title: 'Dermatóloga Estética',
+    quote: 'La versatilidad de este equipo es inigualable. Puedo ofrecer desde tratamientos vasculares hasta rejuvenecimiento con una sola plataforma. Una inversión que vale cada centavo.',
+    avatarId: 'avatar-doctor-female'
+  },
+  {
+    id: 'testimonial-3',
+    name: 'Dr. Mateo Rivera',
+    title: 'Odontólogo',
+    quote: 'Implementé los procedimientos dentales con el LASEEV y la precisión es fantástica. Mis pacientes reportan menos dolor y una cicatrización más rápida. Lo recomiendo totalmente.',
+    avatarId: 'avatar-doctor-male-2'
+  }
+];
+
+const faqItems = [
+  {
+    id: "faq-1",
+    question: "¿Qué certificaciones tiene el equipo LASEEV Pro?",
+    answer: "El LASEEV Pro cuenta con las certificaciones más importantes a nivel internacional, incluyendo FDA e ISO, lo que garantiza su seguridad, calidad y eficacia en todos los procedimientos."
+  },
+  {
+    id: "faq-2",
+    question: "¿La formación está incluida con la compra del equipo?",
+    answer: "Sí, al adquirir el LASEEV Pro, te incluimos un programa de formación profesional completo y personalizado. Nuestro equipo de expertos te guiará para que domines todas las funciones y saques el máximo provecho a tu inversión desde el primer día."
+  },
+  {
+    id: "faq-3",
+    question: "¿Qué tipo de garantía ofrecen?",
+    answer: "Ofrecemos una garantía extendida de 2 años que cubre cualquier defecto de fabricación. Además, contamos con servicio técnico especializado y soporte continuo para resolver cualquier incidencia de manera rápida y eficiente."
+  },
+  {
+    id: "faq-4",
+    question: "¿Es complicado el mantenimiento del equipo?",
+    answer: "No, el LASEEV Pro está diseñado para ser robusto y de bajo mantenimiento. Te proporcionamos un manual detallado y pautas sencillas para asegurar su óptimo funcionamiento a lo largo del tiempo. Nuestro equipo de soporte también está disponible para cualquier consulta."
+  }
 ];
 
 export default function Home() {
@@ -152,6 +203,56 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Testimonials Section */}
+        <section id="testimonios" className="py-20 bg-background">
+          <div className="container px-4">
+            <SectionTitle>Testimonios de Clientes</SectionTitle>
+            <SectionSubtitle>Vea lo que dicen los profesionales que ya confían en nuestra tecnología.</SectionSubtitle>
+            <div className="grid md:grid-cols-3 gap-8">
+              {testimonials.map((testimonial) => {
+                const avatarImage = PlaceHolderImages.find(p => p.id === testimonial.avatarId);
+                return (
+                  <Card key={testimonial.id} className="flex flex-col">
+                    <CardHeader className="flex flex-row items-center gap-4">
+                      <Avatar className='h-14 w-14'>
+                        {avatarImage && <AvatarImage src={avatarImage.imageUrl} alt={avatarImage.description} data-ai-hint={avatarImage.imageHint} />}
+                        <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                      </Avatar>
+                      <div>
+                        <CardTitle className="text-lg">{testimonial.name}</CardTitle>
+                        <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                      <Quote className="w-6 h-6 text-primary/50 mb-2" />
+                      <p className="text-muted-foreground">{testimonial.quote}</p>
+                    </CardContent>
+                  </Card>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section id="faq" className="py-20">
+          <div className="container px-4 max-w-3xl mx-auto">
+            <SectionTitle>Preguntas Frecuentes</SectionTitle>
+            <SectionSubtitle>¿Tienes dudas? Aquí resolvemos las consultas más habituales sobre el equipo LASEEV Pro.</SectionSubtitle>
+            <Accordion type="single" collapsible className="w-full">
+              {faqItems.map((item) => (
+                <AccordionItem key={item.id} value={item.id}>
+                  <AccordionTrigger className="text-left font-semibold text-lg">{item.question}</AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground text-base">
+                    {item.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </section>
+
       </main>
       <LandingFooter />
     </div>
