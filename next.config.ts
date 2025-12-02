@@ -57,6 +57,12 @@ const nextConfig: NextConfig = {
         hostname: 'gynemid.mx',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'markmedicalcare.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
