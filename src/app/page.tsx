@@ -30,11 +30,11 @@ const SectionSubtitle = ({ children, className }: { children: React.ReactNode, c
 );
 
 const featureIcons = [
-  { icon: <Gem size={32} />, text: 'Máquina Alta Gama' },
-  { icon: <Waves size={32} />, text: 'Doble Longitud de Onda (980nm - 1470nm)' },
-  { icon: <ShieldCheck size={32} />, text: 'Garantía 2 Años' },
-  { icon: <GraduationCap size={32} />, text: 'Formación Profesional' },
-];
+    { id: 'laseev-pro-machine', text: 'Máquina Alta Gama' },
+    { id: 'feature-wavelength', text: 'Doble Longitud de Onda (980nm - 1470nm)' },
+    { id: 'feature-warranty', text: 'Garantía 2 Años' },
+    { id: 'feature-training', text: 'Formación Profesional' },
+  ];
 
 const laseevFunctions = [
   { id: 'laseev-endolifting', icon: <HeartPulse />, text: 'Endolifting / Lipólisis', description: 'Rejuvenecimiento y eliminación de grasa localizada.' },
@@ -75,14 +75,21 @@ export default function Home() {
         <section className="bg-background py-8 md:py-12 relative z-20">
           <div className="container mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {featureIcons.map((feature, index) => (
-                <Card key={index} className="bg-card shadow-lg animate-fade-in-up transition-transform duration-300 hover:-translate-y-2">
-                  <CardContent className="flex flex-col items-center justify-center text-center p-4 sm:p-6 gap-3 h-full">
-                    <div className="text-primary">{feature.icon}</div>
-                    <span className="text-sm sm:text-base font-semibold text-foreground">{feature.text}</span>
-                  </CardContent>
-                </Card>
-              ))}
+              {featureIcons.map((feature, index) => {
+                const image = PlaceHolderImages.find(p => p.id === feature.id);
+                return (
+                  <Card key={index} className="bg-card shadow-lg animate-fade-in-up transition-transform duration-300 hover:-translate-y-2 overflow-hidden flex flex-col">
+                    {image && (
+                      <div className="overflow-hidden aspect-video relative">
+                        <Image src={image.imageUrl} alt={image.description} data-ai-hint={image.imageHint} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
+                      </div>
+                    )}
+                    <CardContent className="flex flex-col items-center justify-center text-center p-4 sm:p-6 gap-3 h-full">
+                      <span className="text-sm sm:text-base font-semibold text-foreground">{feature.text}</span>
+                    </CardContent>
+                  </Card>
+                );
+              })}
             </div>
           </div>
         </section>

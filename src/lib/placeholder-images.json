@@ -161,6 +161,24 @@
       "description": "A person teaching how to groom a dog.",
       "imageUrl": "https://i.imgur.com/ukhOKYT.jpeg",
       "imageHint": "dog training"
+    },
+    {
+      "id": "feature-wavelength",
+      "description": "Abstract graphic showing laser wavelengths.",
+      "imageUrl": "https://i.imgur.com/y1vRZNz.jpeg",
+      "imageHint": "laser wavelength"
+    },
+    {
+      "id": "feature-warranty",
+      "description": "A warranty seal or certificate.",
+      "imageUrl": "https://i.imgur.com/f2n5pL0.jpeg",
+      "imageHint": "warranty seal"
+    },
+    {
+      "id": "feature-training",
+      "description": "A group of professionals in a training session.",
+      "imageUrl": "https://i.imgur.com/x0q4w9j.jpeg",
+      "imageHint": "professional training"
     }
   ]
 }
