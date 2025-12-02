@@ -15,11 +15,10 @@ import {
 import Image from 'next/image';
 
 const navLinks = [
-  { href: '#inicio', label: 'INICIO' },
-  { href: '#laseev', label: 'LASEEV 10 EN 1' },
-  { href: '#tratamientos', label: 'TRATAMIENTOS' },
-  { href: '#cursos', label: 'CURSOS' },
-  { href: '#contacto', label: 'CONTACTO' },
+  { href: '/', label: 'INICIO' },
+  { href: '/tratamientos', label: 'TRATAMIENTOS' },
+  { href: '/cursos', label: 'CURSOS' },
+  { href: '/contacto', label: 'CONTACTO' },
 ];
 
 export function LandingHeader() {
@@ -33,7 +32,7 @@ export function LandingHeader() {
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link href="#inicio" className="flex items-center">
+        <Link href="/" className="flex items-center">
           <Image src="https://i.imgur.com/hk8p7DX.png" alt="Medic Teaching Group Logo" width={150} height={40} />
         </Link>
         <nav className="hidden lg:flex items-center gap-6">
@@ -49,7 +48,7 @@ export function LandingHeader() {
         </nav>
         <div className="hidden lg:flex items-center gap-4">
           <Button asChild className="bg-sky-600 hover:bg-sky-700 text-white font-bold">
-            <Link href="#mister-dog">MISTER DOG</Link>
+            <Link href="/#mister-dog">MISTER DOG</Link>
           </Button>
           <a
             href="tel:+51984348389"
@@ -72,7 +71,7 @@ export function LandingHeader() {
                  <SheetTitle className="sr-only">Menú de Navegación</SheetTitle>
                </SheetHeader>
               <div className="flex flex-col h-full p-6 pt-0">
-                <Link href="#inicio" onClick={() => setIsMobileMenuOpen(false)} className="mb-8">
+                <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="mb-8">
                   <Image src="https://i.imgur.com/hk8p7DX.png" alt="Medic Teaching Group Logo" width={180} height={48} />
                 </Link>
                 <nav className="flex flex-col gap-6 text-lg">
@@ -89,7 +88,7 @@ export function LandingHeader() {
                 </nav>
                 <div className="mt-auto flex flex-col gap-4">
                    <Button asChild size="lg" onClick={() => setIsMobileMenuOpen(false)} className="bg-sky-600 hover:bg-sky-700 text-white font-bold">
-                    <Link href="#mister-dog">MISTER DOG</Link>
+                    <Link href="/#mister-dog">MISTER DOG</Link>
                   </Button>
                   <a
                     href="tel:+51984348389"
