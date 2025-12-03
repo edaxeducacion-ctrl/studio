@@ -81,6 +81,12 @@ const nextConfig: NextConfig = {
         hostname: 'mafercamargo.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.orclinica.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
