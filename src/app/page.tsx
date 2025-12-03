@@ -163,7 +163,7 @@ export default function Home() {
         {/* Star Product Section */}
         <section id="laseev" className="py-20">
           <div className="container px-4">
-            <SectionTitle>LASEEV Pro: Endoláser Multifuncional 10 en 1</SectionTitle>
+            <SectionTitle>LASEEV Pro: Endoláser 10 en 1</SectionTitle>
             <SectionSubtitle>Plataforma láser dual certificada (FDA/ISO) para procedimientos seguros y efectivos. Energía de alta precisión con potencia ajustable de 1 a 30 watts.</SectionSubtitle>
             
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
@@ -187,7 +187,7 @@ export default function Home() {
                 </Button>
               </div>
               <div className="flex justify-center animate-fade-in-up relative order-1 md:order-2">
-                {laseevMachineImage && <Image src={laseevMachineImage.imageUrl} alt={laseevMachineImage.description} data-ai-hint={laseevMachineImage.imageHint} width={500} height={500} className="rounded-lg shadow-2xl" />}
+                {laseevMachineImage && <Image src={laseevMachineImage.imageUrl} alt={laseevMachineImage.description} data-ai-hint={laseevMachineImage.imageHint} width={600} height={514} className="rounded-lg" />}
               </div>
             </div>
 
