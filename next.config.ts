@@ -69,9 +69,17 @@ const nextConfig: NextConfig = {
         hostname: 'image.made-in-china.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'static.wixstatic.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
 };
 
 export default nextConfig;
+
+    
