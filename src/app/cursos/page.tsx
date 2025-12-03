@@ -45,7 +45,7 @@ export default function CoursesPage() {
                     </CardHeader>
                     <CardFooter>
                       <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
-                        <a href={`https://wa.me/51947282902?text=Hola,%20quisiera%20inscribirme%20en%20el%20curso%20de%20'${course.title}'`} target="_blank" rel="noopener noreferrer">
+                        <a href={`https://wa.me/51970616024?text=Hola,%20quisiera%20inscribirme%20en%20el%20curso%20de%20'${course.title}'`} target="_blank" rel="noopener noreferrer">
                           <WhatsappIcon className="mr-2 h-4 w-4" /> Inscribirme
                         </a>
                       </Button>
@@ -56,7 +56,7 @@ export default function CoursesPage() {
             </div>
             <div className="text-center mt-12">
               <Button asChild size="lg">
-                <a href="https://wa.me/51947282902?text=Hola,%20quisiera%20ver%20las%20fechas%20y%20matricularme%20en%20un%20curso." target="_blank" rel="noopener noreferrer">VER FECHAS Y MATRICULARME</a>
+                <a href="https://wa.me/51970616024?text=Hola,%20quisiera%20ver%20las%20fechas%20y%20matricularme%20en%20un%20curso." target="_blank" rel="noopener noreferrer">VER FECHAS Y MATRICULARME</a>
               </Button>
             </div>
           </div>
@@ -65,7 +65,7 @@ export default function CoursesPage() {
       <LandingFooter />
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/51984348389?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20servicios."
+        href="https://wa.me/51970616024?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20servicios."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-[#25D366] text-white w-16 h-16 rounded-full shadow-lg hover:bg-[#128C7E] transition-colors z-50 flex items-center justify-center"

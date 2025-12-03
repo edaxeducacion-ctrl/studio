@@ -38,7 +38,7 @@ export default function MisterDogPage() {
                 </CardContent>
                 <CardFooter>
                   <Button asChild className="w-full bg-sky-500 hover:bg-sky-600 text-white">
-                    <a href="https://wa.me/51947282902?text=Hola,%20quisiera%20más%20información%20sobre%20la%20promoción%20de%20baño%20y%20corte." target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/51970616024?text=Hola,%20quisiera%20más%20información%20sobre%20la%20promoción%20de%20baño%20y%20corte." target="_blank" rel="noopener noreferrer">
                       <Info className="mr-2 h-4 w-4" /> Más información
                     </a>
                   </Button>
@@ -56,7 +56,7 @@ export default function MisterDogPage() {
                 </CardContent>
                 <CardFooter>
                   <Button asChild className="w-full bg-sky-500 hover:bg-sky-600 text-white">
-                    <a href="https://wa.me/51947282902?text=Hola,%20quisiera%20inscribirme%20en%20el%20curso%20de%20peluquería%20canina." target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/51970616024?text=Hola,%20quisiera%20inscribirme%20en%20el%20curso%20de%20peluquería%20canina." target="_blank" rel="noopener noreferrer">
                       <GraduationCap className="mr-2 h-4 w-4" /> Inscribirme
                     </a>
                   </Button>
@@ -65,7 +65,7 @@ export default function MisterDogPage() {
             </div>
              <div className="text-center mt-8 text-sky-900 dark:text-sky-200">
               <p><strong>Ubicación:</strong> Los Amatistas #125, S.J.L.</p>
-              <p><strong>Teléfono:</strong> <a href="tel:+51947282902" className="hover:underline">+51 947 282 902</a></p>
+              <p><strong>Teléfono:</strong> <a href="tel:+51970616024" className="hover:underline">+51 970 616 024</a></p>
             </div>
           </div>
         </section>
@@ -73,7 +73,7 @@ export default function MisterDogPage() {
       <LandingFooter />
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/51984348389?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20servicios."
+        href="https://wa.me/51970616024?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20servicios."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-[#25D366] text-white w-16 h-16 rounded-full shadow-lg hover:bg-[#128C7E] transition-colors z-50 flex items-center justify-center"

@@ -44,7 +44,7 @@ export default function TreatmentsPage() {
                     </CardHeader>
                     <CardFooter>
                        <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
-                         <a href={`https://wa.me/51947282902?text=Hola,%20quisiera%20agendar%20una%20cita%20para%20el%20tratamiento%20de%20'${treatment.title}'`} target="_blank" rel="noopener noreferrer">
+                         <a href={`https://wa.me/51970616024?text=Hola,%20quisiera%20agendar%20una%20cita%20para%20el%20tratamiento%20de%20'${treatment.title}'`} target="_blank" rel="noopener noreferrer">
                            <Calendar className="mr-2 h-4 w-4" /> Agendar cita
                          </a>
                        </Button>
@@ -55,7 +55,7 @@ export default function TreatmentsPage() {
             </div>
             <div className="text-center mt-12">
               <Button asChild size="lg">
-                <a href="https://wa.me/51947282902?text=Hola,%20quisiera%20agendar%20una%20cita." target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/51970616024?text=Hola,%20quisiera%20agendar%20una%20cita." target="_blank" rel="noopener noreferrer">
                   <Phone className="mr-2" /> AGENDA TU CITA POR WHATSAPP
                 </a>
               </Button>
@@ -66,7 +66,7 @@ export default function TreatmentsPage() {
       <LandingFooter />
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/51984348389?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20servicios."
+        href="https://wa.me/51970616024?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20servicios."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-[#25D366] text-white w-16 h-16 rounded-full shadow-lg hover:bg-[#128C7E] transition-colors z-50 flex items-center justify-center"

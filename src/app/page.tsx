@@ -183,7 +183,7 @@ export default function Home() {
                 <p className="text-5xl lg:text-6xl font-extrabold text-primary mb-6">$7100 USD</p>
                 <p className="mb-8 text-lg">La tecnología más avanzada para una amplia gama de aplicaciones médicas y estéticas.</p>
                 <Button asChild size="lg">
-                  <a href="https://wa.me/51947282902?text=Hola,%20quisiera%20solicitar%20la%20ficha%20técnica%20del%20LASEEV%20Pro." target="_blank" rel="noopener noreferrer">SOLICITAR FICHA TÉCNICA</a>
+                  <a href="https://wa.me/51970616024?text=Hola,%20quisiera%20solicitar%20la%20ficha%20técnica%20del%20LASEEV%20Pro." target="_blank" rel="noopener noreferrer">SOLICITAR FICHA TÉCNICA</a>
                 </Button>
               </div>
               <div className="flex justify-center animate-fade-in-up relative order-1 md:order-2">

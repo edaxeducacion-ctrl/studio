@@ -49,11 +49,11 @@ export function LandingHeader() {
         </nav>
         <div className="hidden lg:flex items-center gap-4">
           <a
-            href="tel:+51984348389"
+            href="tel:+51970616024"
             className="flex items-center gap-2 text-sm font-semibold text-primary"
           >
             <Phone className="h-4 w-4" />
-            +51 984 348 389
+            +51 970 616 024
           </a>
         </div>
         <div className="lg:hidden">
@@ -86,11 +86,11 @@ export function LandingHeader() {
                 </nav>
                 <div className="mt-auto flex flex-col gap-4">
                   <a
-                    href="tel:+51984348389"
+                    href="tel:+51970616024"
                     className="flex items-center justify-center gap-2 text-lg font-semibold text-primary"
                   >
                     <Phone className="h-5 w-5" />
-                    +51 984 348 389
+                    +51 970 616 024
                   </a>
                 </div>
               </div>

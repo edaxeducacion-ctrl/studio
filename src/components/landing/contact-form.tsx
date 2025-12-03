@@ -49,7 +49,7 @@ export function ContactForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     const { name, phone, motive } = values;
     const message = `Hola, quisiera más información desde la web.\n\n*Nombre:* ${name}\n*Teléfono:* ${phone}\n*Motivo de Consulta:* ${motive}`;
-    const whatsappUrl = `https://wa.me/51947282902?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/51970616024?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappUrl, '_blank');
 
