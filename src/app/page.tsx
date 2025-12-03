@@ -2,7 +2,9 @@
 import Image from 'next/image';
 import {
   Activity,
+  Award,
   Bone,
+  Clock,
   Gem,
   GraduationCap,
   Hand,
@@ -10,6 +12,7 @@ import {
   Quote,
   ShieldCheck,
   Stethoscope,
+  Users,
   Venus,
   Waves,
 } from 'lucide-react';
@@ -96,6 +99,24 @@ const faqItems = [
     id: "faq-4",
     question: "¿Es complicado el mantenimiento del equipo?",
     answer: "No, el LASEEV Pro está diseñado para ser robusto y de bajo mantenimiento. Te proporcionamos un manual detallado y pautas sencillas para asegurar su óptimo funcionamiento a lo largo del tiempo. Nuestro equipo de soporte también está disponible para cualquier consulta."
+  }
+];
+
+const benefits = [
+  {
+    icon: <Award className="w-12 h-12 text-primary" />,
+    title: 'Resultados Superiores',
+    description: 'Ofrece resultados visibles y naturales con máxima precisión, mejorando la satisfacción del paciente.'
+  },
+  {
+    icon: <Clock className="w-12 h-12 text-primary" />,
+    title: 'Recuperación Rápida',
+    description: 'Procedimientos mínimamente invasivos que reducen el tiempo de inactividad y permiten un retorno más rápido a las actividades diarias.'
+  },
+  {
+    icon: <Users className="w-12 h-12 text-primary" />,
+    title: 'Amplíe sus Servicios',
+    description: 'La versatilidad 10 en 1 le permite diversificar su oferta de tratamientos y atraer a más pacientes.'
   }
 ];
 
@@ -193,6 +214,27 @@ export default function Home() {
                 })}
               </div>
             </div>
+
+            {/* Benefits Section */}
+            <section id="beneficios" className="py-20">
+                <div className="container px-4">
+                    <SectionTitle>Beneficios de LASEEV Pro</SectionTitle>
+                    <SectionSubtitle>Descubra por qué LASEEV Pro es la elección inteligente para su práctica.</SectionSubtitle>
+                    <div className="grid md:grid-cols-3 gap-8">
+                        {benefits.map((benefit) => (
+                            <Card key={benefit.title} className="text-center">
+                                <CardHeader>
+                                    <div className="flex justify-center mb-4">{benefit.icon}</div>
+                                    <CardTitle>{benefit.title}</CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-muted-foreground">{benefit.description}</p>
+                                </CardContent>
+                            </Card>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             {/* Testimonials Section */}
             <section id="testimonios" className="py-20 bg-background">
