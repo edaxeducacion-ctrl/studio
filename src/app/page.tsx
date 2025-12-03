@@ -172,7 +172,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center md:items-start text-center md:text-left">
                 <h3 className="text-2xl font-bold text-primary/90 mb-4">¿Deseas Disolver Grasa y Tensar la Piel en un solo procedimiento?</h3>
-                <p className="mb-4 text-muted-foreground">Endoláser multifuncional es la solución mínimamente invasiva para la grasa rebelde. Disuelve las células adiposas y, simultáneamente, tensa la piel para una silueta definida. ¡Remodelación corporal avanzada con una recuperación más rápida!</p>
+                <p className="mb-4 text-muted-foreground">Endoláser es la solución mínimamente invasiva para la grasa rebelde. Disuelve las células adiposas y, simultáneamente, tensa la piel para una silueta definida. ¡Remodelación corporal avanzada con una recuperación más rápida!</p>
               </div>
             </div>
 
