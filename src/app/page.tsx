@@ -249,7 +249,7 @@ export default function Home() {
                       <Card key={testimonial.id} className="flex flex-col">
                         <CardHeader className="flex flex-row items-center gap-4">
                           <Avatar className='h-14 w-14'>
-                            {avatarImage && <AvatarImage src={avatarImage.imageUrl} alt={avatarImage.description} data-ai-hint={avatarImage.imageHint} />}
+                            {avatarImage && <AvatarImage src={avatarImage.imageUrl} alt={avatarImage.description} data-ai-hint={avatarImage.imageHint} className="object-cover" />}
                             <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                           </Avatar>
                           <div>
