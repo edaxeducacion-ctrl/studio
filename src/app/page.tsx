@@ -188,7 +188,7 @@ export default function Home() {
                 </Button>
               </div>
               <div className="flex justify-center animate-fade-in-up relative order-1 md:order-2">
-                {laseevMachineImage && <Image src={laseevMachineImage.imageUrl} alt={laseevMachineImage.description} data-ai-hint={laseevMachineImage.imageHint} width={600} height={514} className="rounded-lg" />}
+                {laseevMachineImage && <Image src={laseevMachineImage.imageUrl} alt={laseevMachineImage.description} data-ai-hint={laseevMachineImage.imageHint} width={600} height={600} className="rounded-lg" />}
               </div>
             </div>
 
