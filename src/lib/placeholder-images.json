@@ -8,7 +8,7 @@
     },
     {
       "id": "laseev-pro-machine",
-      "description": "The LASEEV Pro endolaser machine on a clean background.",
+      "description": "The Láser Multifuncional Pro endolaser machine on a clean background.",
       "imageUrl": "https://i.imgur.com/HNYhuaP.png",
       "imageHint": "medical equipment"
     },
@@ -155,18 +155,6 @@
       "description": "Practical training on body contouring techniques.",
       "imageUrl": "https://i.imgur.com/9hvYsBl.jpeg",
       "imageHint": "body contouring"
-    },
-    {
-      "id": "mister-dog-grooming",
-      "description": "A happy dog being groomed.",
-      "imageUrl": "https://i.imgur.com/DTWt3im.jpeg",
-      "imageHint": "dog grooming"
-    },
-    {
-      "id": "mister-dog-course",
-      "description": "A person teaching how to groom a dog.",
-      "imageUrl": "https://i.imgur.com/ukhOKYT.jpeg",
-      "imageHint": "dog training"
     },
     {
       "id": "feature-wavelength",

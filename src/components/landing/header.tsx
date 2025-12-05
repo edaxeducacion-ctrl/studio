@@ -18,7 +18,6 @@ const navLinks = [
   { href: '/', label: 'INICIO' },
   { href: '/tratamientos', label: 'TRATAMIENTOS' },
   { href: '/cursos', label: 'CURSOS' },
-  { href: '/mister-dog', label: 'MISTER DOG' },
   { href: '/contacto', label: 'CONTACTO' },
 ];
 
