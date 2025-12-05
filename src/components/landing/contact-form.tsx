@@ -104,7 +104,7 @@ export function ContactForm() {
                 <SelectContent>
                   <SelectItem value="tratamiento">Tratamiento</SelectItem>
                   <SelectItem value="curso">Curso</SelectItem>
-                  <SelectItem value="maquina">Máquina LASEEV</SelectItem>
+                  <SelectItem value="maquina">Máquina Láser Multifuncional Pro</SelectItem>
                 </SelectContent>
               </Select>
               <FormMessage />

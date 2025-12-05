@@ -61,7 +61,7 @@ const testimonials = [
     id: 'testimonial-1',
     name: 'Dr. Alejandro Vargas',
     title: 'Cirujano Plástico',
-    quote: 'El LASEEV Pro ha revolucionado mi práctica. Los resultados en lipólisis facial son impresionantes y mis pacientes están encantados con la rápida recuperación.',
+    quote: 'El Láser Multifuncional Pro ha revolucionado mi práctica. Los resultados en lipólisis facial son impresionantes y mis pacientes están encantados con la rápida recuperación.',
     avatarId: 'avatar-doctor-male'
   },
   {
@@ -75,7 +75,7 @@ const testimonials = [
     id: 'testimonial-3',
     name: 'Dr. Mateo Rivera',
     title: 'Odontólogo',
-    quote: 'Implementé los procedimientos dentales con el LASEEV y la precisión es fantástica. Mis pacientes reportan menos dolor y una cicatrización más rápida. Lo recomiendo totalmente.',
+    quote: 'Implementé los procedimientos dentales con el Láser Multifuncional Pro y la precisión es fantástica. Mis pacientes reportan menos dolor y una cicatrización más rápida. Lo recomiendo totalmente.',
     avatarId: 'avatar-doctor-male-2'
   }
 ];
@@ -83,13 +83,13 @@ const testimonials = [
 const faqItems = [
   {
     id: "faq-1",
-    question: "¿Qué certificaciones tiene el equipo LASEEV Pro?",
-    answer: "El LASEEV Pro cuenta con las certificaciones más importantes a nivel internacional, incluyendo FDA e ISO, lo que garantiza su seguridad, calidad y eficacia en todos los procedimientos."
+    question: "¿Qué certificaciones tiene el equipo Láser Multifuncional Pro?",
+    answer: "El Láser Multifuncional Pro cuenta con las certificaciones más importantes a nivel internacional, incluyendo FDA e ISO, lo que garantiza su seguridad, calidad y eficacia en todos los procedimientos."
   },
   {
     id: "faq-2",
     question: "¿La formación está incluida con la compra del equipo?",
-    answer: "Sí, al adquirir el LASEEV Pro, te incluimos un programa de formación profesional completo y personalizado. Nuestro equipo de expertos te guiará para que domines todas las funciones y saques el máximo provecho a tu inversión desde el primer día."
+    answer: "Sí, al adquirir el Láser Multifuncional Pro, te incluimos un programa de formación profesional completo y personalizado. Nuestro equipo de expertos te guiará para que domines todas las funciones y saques el máximo provecho a tu inversión desde el primer día."
   },
   {
     id: "faq-3",
@@ -99,7 +99,7 @@ const faqItems = [
   {
     id: "faq-4",
     question: "¿Es complicado el mantenimiento del equipo?",
-    answer: "No, el LASEEV Pro está diseñado para ser robusto y de bajo mantenimiento. Te proporcionamos un manual detallado y pautas sencillas para asegurar su óptimo funcionamiento a lo largo del tiempo. Nuestro equipo de soporte también está disponible para cualquier consulta."
+    answer: "No, el Láser Multifuncional Pro está diseñado para ser robusto y de bajo mantenimiento. Te proporcionamos un manual detallado y pautas sencillas para asegurar su óptimo funcionamiento a lo largo del tiempo. Nuestro equipo de soporte también está disponible para cualquier consulta."
   }
 ];
 
@@ -164,7 +164,7 @@ export default function Home() {
         {/* Star Product Section */}
         <section id="laseev" className="py-20">
           <div className="container px-4">
-            <SectionTitle>LASEEV Pro: Endoláser 10 en 1</SectionTitle>
+            <SectionTitle>Láser Multifuncional Pro: Endoláser 10 en 1</SectionTitle>
             <SectionSubtitle>Plataforma láser dual certificada (FDA/ISO) para procedimientos seguros y efectivos. Energía de alta precisión con potencia ajustable de 1 a 30 watts.</SectionSubtitle>
             
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
@@ -184,7 +184,7 @@ export default function Home() {
                 <p className="text-5xl lg:text-6xl font-extrabold text-primary mb-6">$7100 USD</p>
                 <p className="mb-8 text-lg">La tecnología más avanzada para una amplia gama de aplicaciones médicas y estéticas.</p>
                 <Button asChild size="lg">
-                  <a href="https://wa.me/51970616024?text=Hola,%20quisiera%20solicitar%20la%20ficha%20técnica%20del%20LASEEV%20Pro." target="_blank" rel="noopener noreferrer">SOLICITAR FICHA TÉCNICA</a>
+                  <a href="https://wa.me/51970616024?text=Hola,%20quisiera%20solicitar%20la%20ficha%20técnica%20del%20Láser%20Multifuncional%20Pro." target="_blank" rel="noopener noreferrer">SOLICITAR FICHA TÉCNICA</a>
                 </Button>
               </div>
               <div className="flex justify-center animate-fade-in-up relative order-1 md:order-2">
@@ -219,8 +219,8 @@ export default function Home() {
             {/* Benefits Section */}
             <section id="beneficios" className="py-20">
                 <div className="container px-4">
-                    <SectionTitle>Beneficios de LASEEV Pro</SectionTitle>
-                    <SectionSubtitle>Descubra por qué LASEEV Pro es la elección inteligente para su práctica.</SectionSubtitle>
+                    <SectionTitle>Beneficios de Láser Multifuncional Pro</SectionTitle>
+                    <SectionSubtitle>Descubra por qué Láser Multifuncional Pro es la elección inteligente para su práctica.</SectionSubtitle>
                     <div className="grid md:grid-cols-3 gap-8">
                         {benefits.map((benefit) => (
                             <Card key={benefit.title} className="text-center">
@@ -272,7 +272,7 @@ export default function Home() {
             <section id="faq" className="py-20">
               <div className="container px-4 max-w-3xl mx-auto">
                 <SectionTitle>Preguntas Frecuentes</SectionTitle>
-                <SectionSubtitle>¿Tienes dudas? Aquí resolvemos las consultas más habituales sobre el equipo LASEEV Pro.</SectionSubtitle>
+                <SectionSubtitle>¿Tienes dudas? Aquí resolvemos las consultas más habituales sobre el equipo Láser Multifuncional Pro.</SectionSubtitle>
                 <Accordion type="single" collapsible className="w-full">
                   {faqItems.map((item) => (
                     <AccordionItem key={item.id} value={item.id}>
