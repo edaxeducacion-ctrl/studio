@@ -157,6 +157,12 @@
       "imageHint": "body contouring"
     },
     {
+      "id": "course-flebologia",
+      "description": "Medical procedure on a leg vein.",
+      "imageUrl": "https://i.imgur.com/uWnL3h7.jpeg",
+      "imageHint": "vein treatment"
+    },
+    {
       "id": "feature-wavelength",
       "description": "Abstract graphic showing laser wavelengths.",
       "imageUrl": "https://i.imgur.com/y1vRZNz.jpeg",

@@ -23,6 +23,7 @@ const courses = [
   { id: 'course-labioplastia', title: 'Curso de Labioplastia' },
   { id: 'course-rinomodelacion', title: 'Curso de Rinomodelación Labios' },
   { id: 'course-mela', title: 'Curso de MELA Corporal' },
+  { id: 'course-flebologia', title: 'Curso Flebología' },
 ];
 
 export default function CoursesPage() {
