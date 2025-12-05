@@ -93,7 +93,7 @@ const nextConfig: NextConfig = {
         hostname: 'encrypted-tbn3.gstatic.com',
         port: '',
         pathname: '/**',
-      }
+      },
     ],
   },
 };
