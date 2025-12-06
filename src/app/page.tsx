@@ -61,14 +61,14 @@ const laseevFunctions = [
 const testimonials = [
   {
     id: 'testimonial-1',
-    name: 'Profesional de la Salud',
-    title: 'Usuario Verificado',
+    name: 'Dr. Alejandro Vargas',
+    title: 'Cirujano Plástico',
     quote: 'Funciona mejor de lo que esperaba. Hasta ahora todo bien, por eso sí la recomendaría.',
   },
   {
     id: 'testimonial-2',
-    name: 'Profesional de la Salud',
-    title: 'Usuario Verificado',
+    name: 'Dra. María José',
+    title: 'Dermatóloga Estética',
     quote: 'Estoy usando la máquina y realmente me está yendo bien. La recomendaría a otros.',
   }
 ];
