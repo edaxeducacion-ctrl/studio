@@ -1,4 +1,5 @@
 
+
 import Image from 'next/image';
 import {
   Activity,
@@ -12,6 +13,7 @@ import {
   Quote,
   ShieldCheck,
   Stethoscope,
+  User,
   Users,
   Venus,
   Waves,
@@ -59,24 +61,15 @@ const laseevFunctions = [
 const testimonials = [
   {
     id: 'testimonial-1',
-    name: 'Dr. Alejandro Vargas',
-    title: 'Cirujano Plástico',
-    quote: 'El Láser Multifuncional Pro ha revolucionado mi práctica. Los resultados en lipólisis facial son impresionantes y mis pacientes están encantados con la rápida recuperación.',
-    avatarId: 'avatar-doctor-male'
+    name: 'Profesional de la Salud',
+    title: 'Usuario Verificado',
+    quote: 'Funciona mejor de lo que esperaba. Hasta ahora todo bien, por eso sí la recomendaría.',
   },
   {
     id: 'testimonial-2',
-    name: 'Dra. Sofia Contreras',
-    title: 'Dermatóloga Estética',
-    quote: 'La versatilidad de este equipo es inigualable. Puedo ofrecer desde tratamientos vasculares hasta rejuvenecimiento con una sola plataforma. Una inversión que vale cada centavo.',
-    avatarId: 'avatar-doctor-female'
-  },
-  {
-    id: 'testimonial-3',
-    name: 'Dr. Mateo Rivera',
-    title: 'Odontólogo',
-    quote: 'Implementé los procedimientos dentales con el Láser Multifuncional Pro y la precisión es fantástica. Mis pacientes reportan menos dolor y una cicatrización más rápida. Lo recomiendo totalmente.',
-    avatarId: 'avatar-doctor-male-2'
+    name: 'Profesional de la Salud',
+    title: 'Usuario Verificado',
+    quote: 'Estoy usando la máquina y realmente me está yendo bien. La recomendaría a otros.',
   }
 ];
 
@@ -242,15 +235,14 @@ export default function Home() {
               <div className="container px-4">
                 <SectionTitle>Testimonios de Clientes</SectionTitle>
                 <SectionSubtitle>Vea lo que dicen los profesionales que ya confían en nuestra tecnología.</SectionSubtitle>
-                <div className="grid md:grid-cols-3 gap-8">
-                  {testimonials.map((testimonial) => {
-                    const avatarImage = PlaceHolderImages.find(p => p.id === testimonial.avatarId);
-                    return (
+                <div className="grid md:grid-cols-2 gap-8">
+                  {testimonials.map((testimonial) => (
                       <Card key={testimonial.id} className="flex flex-col">
                         <CardHeader className="flex flex-row items-center gap-4">
-                          <Avatar className='h-14 w-14'>
-                            {avatarImage && <AvatarImage src={avatarImage.imageUrl} alt={avatarImage.description} data-ai-hint={avatarImage.imageHint} className="object-cover" />}
-                            <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                          <Avatar className='h-14 w-14 bg-muted text-muted-foreground'>
+                            <AvatarFallback>
+                              <User className="h-8 w-8" />
+                            </AvatarFallback>
                           </Avatar>
                           <div>
                             <CardTitle className="text-lg">{testimonial.name}</CardTitle>
@@ -262,8 +254,7 @@ export default function Home() {
                           <p className="text-muted-foreground">{testimonial.quote}</p>
                         </CardContent>
                       </Card>
-                    )
-                  })}
+                    ))}
                 </div>
               </div>
             </section>
