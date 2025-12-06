@@ -5,6 +5,19 @@ import { Toaster } from "@/components/ui/toaster";
 export const metadata: Metadata = {
   title: 'Medic Teaching Group - MTG',
   description: 'Excelencia en Medicina Estética y Formación Avanzada',
+  openGraph: {
+    title: 'Medic Teaching Group - MTG',
+    description: 'Excelencia en Medicina Estética y Formación Avanzada',
+    images: [
+      {
+        url: 'https://www.infoblancosobrenegro.com/uploads/noticias/5/2024/08/20240819195557_estetica.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Medic Teaching Group',
+      },
+    ],
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
