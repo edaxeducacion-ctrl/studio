@@ -4,10 +4,10 @@ import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: 'Medic Teaching Group - MTG',
-  description: 'Excelencia en Medicina Estética y Formación Avanzada',
+  description: 'En MTG, nos especializamos en ofrecer soluciones innovadoras y de alta calidad para impulsar tu crecimiento profesional y personal. Nuestras máquinas de tecnología de Alta Gama y nuestros cursos de excelencia te permiten acceder a las Últimas tecnicas.',
   openGraph: {
     title: 'Medic Teaching Group - MTG',
-    description: 'Excelencia en Medicina Estética y Formación Avanzada',
+    description: 'En MTG, nos especializamos en ofrecer soluciones innovadoras y de alta calidad para impulsar tu crecimiento profesional y personal. Nuestras máquinas de tecnología de Alta Gama y nuestros cursos de excelencia te permiten acceder a las Últimas tecnicas.',
     images: [
       {
         url: 'https://www.infoblancosobrenegro.com/uploads/noticias/5/2024/08/20240819195557_estetica.jpg',
