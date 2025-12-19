@@ -89,8 +89,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https',
-        hostname: 'encrypted-tbn3.gstatic.com',
+        protocol: 'https-tbn3.gstatic.com',
         port: '',
         pathname: '/**',
       },
