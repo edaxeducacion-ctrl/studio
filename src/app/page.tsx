@@ -174,7 +174,7 @@ export default function Home() {
                <div className="flex flex-col items-center md:items-start text-center md:text-left order-2 md:order-1">
                 <p className="mb-6 font-semibold">SIN BISTURÍ. SIN CICATRICES CON RESULTADOS CLÍNICOS REALES</p>
                 <p className="text-muted-foreground mb-2">Oferta Limitada</p>
-                <p className="text-5xl lg:text-6xl font-extrabold text-primary mb-6">$7100 USD</p>
+                <p className="text-5xl lg:text-6xl font-extrabold text-primary mb-6">$7500 USD</p>
                 <p className="mb-8 text-lg">La tecnología más avanzada para una amplia gama de aplicaciones médicas y estéticas.</p>
                 <Button asChild size="lg">
                   <a href="https://wa.me/51970616024?text=Hola,%20quisiera%20solicitar%20la%20ficha%20técnica%20del%20Láser%20Multifuncional%20Pro." target="_blank" rel="noopener noreferrer">SOLICITAR FICHA TÉCNICA</a>
